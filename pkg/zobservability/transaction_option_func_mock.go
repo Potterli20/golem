@@ -29,7 +29,7 @@ type MocktransactionOptionFunc_Execute_Call struct {
 
 // Execute is a helper method to define mock.On call
 //   - _a0 Transaction
-func (_e *MocktransactionOptionFunc_Expecter) Execute(_a0 interface{}) *MocktransactionOptionFunc_Execute_Call {
+func (_e *MocktransactionOptionFunc_Expecter) Execute(_a0 any) *MocktransactionOptionFunc_Execute_Call {
 	return &MocktransactionOptionFunc_Execute_Call{Call: _e.mock.On("Execute", _a0)}
 }
 

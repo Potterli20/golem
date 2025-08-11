@@ -80,7 +80,7 @@ type MockTransaction_Finish_Call struct {
 
 // Finish is a helper method to define mock.On call
 //   - status TransactionStatus
-func (_e *MockTransaction_Expecter) Finish(status interface{}) *MockTransaction_Finish_Call {
+func (_e *MockTransaction_Expecter) Finish(status any) *MockTransaction_Finish_Call {
 	return &MockTransaction_Finish_Call{Call: _e.mock.On("Finish", status)}
 }
 
@@ -102,7 +102,7 @@ func (_c *MockTransaction_Finish_Call) RunAndReturn(run func(TransactionStatus))
 }
 
 // SetData provides a mock function with given fields: key, value
-func (_m *MockTransaction) SetData(key string, value interface{}) {
+func (_m *MockTransaction) SetData(key string, value any) {
 	_m.Called(key, value)
 }
 
@@ -114,13 +114,13 @@ type MockTransaction_SetData_Call struct {
 // SetData is a helper method to define mock.On call
 //   - key string
 //   - value interface{}
-func (_e *MockTransaction_Expecter) SetData(key interface{}, value interface{}) *MockTransaction_SetData_Call {
+func (_e *MockTransaction_Expecter) SetData(key any, value any) *MockTransaction_SetData_Call {
 	return &MockTransaction_SetData_Call{Call: _e.mock.On("SetData", key, value)}
 }
 
-func (_c *MockTransaction_SetData_Call) Run(run func(key string, value interface{})) *MockTransaction_SetData_Call {
+func (_c *MockTransaction_SetData_Call) Run(run func(key string, value any)) *MockTransaction_SetData_Call {
 	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(string), args[1].(interface{}))
+		run(args[0].(string), args[1].(any))
 	})
 	return _c
 }
@@ -130,7 +130,7 @@ func (_c *MockTransaction_SetData_Call) Return() *MockTransaction_SetData_Call {
 	return _c
 }
 
-func (_c *MockTransaction_SetData_Call) RunAndReturn(run func(string, interface{})) *MockTransaction_SetData_Call {
+func (_c *MockTransaction_SetData_Call) RunAndReturn(run func(string, any)) *MockTransaction_SetData_Call {
 	_c.Run(run)
 	return _c
 }
@@ -147,7 +147,7 @@ type MockTransaction_SetName_Call struct {
 
 // SetName is a helper method to define mock.On call
 //   - name string
-func (_e *MockTransaction_Expecter) SetName(name interface{}) *MockTransaction_SetName_Call {
+func (_e *MockTransaction_Expecter) SetName(name any) *MockTransaction_SetName_Call {
 	return &MockTransaction_SetName_Call{Call: _e.mock.On("SetName", name)}
 }
 
@@ -181,7 +181,7 @@ type MockTransaction_SetTag_Call struct {
 // SetTag is a helper method to define mock.On call
 //   - key string
 //   - value string
-func (_e *MockTransaction_Expecter) SetTag(key interface{}, value interface{}) *MockTransaction_SetTag_Call {
+func (_e *MockTransaction_Expecter) SetTag(key any, value any) *MockTransaction_SetTag_Call {
 	return &MockTransaction_SetTag_Call{Call: _e.mock.On("SetTag", key, value)}
 }
 
@@ -204,11 +204,11 @@ func (_c *MockTransaction_SetTag_Call) RunAndReturn(run func(string, string)) *M
 
 // StartChild provides a mock function with given fields: operation, opts
 func (_m *MockTransaction) StartChild(operation string, opts ...SpanOption) Span {
-	_va := make([]interface{}, len(opts))
+	_va := make([]any, len(opts))
 	for _i := range opts {
 		_va[_i] = opts[_i]
 	}
-	var _ca []interface{}
+	var _ca []any
 	_ca = append(_ca, operation)
 	_ca = append(_ca, _va...)
 	ret := _m.Called(_ca...)
@@ -237,9 +237,9 @@ type MockTransaction_StartChild_Call struct {
 // StartChild is a helper method to define mock.On call
 //   - operation string
 //   - opts ...SpanOption
-func (_e *MockTransaction_Expecter) StartChild(operation interface{}, opts ...interface{}) *MockTransaction_StartChild_Call {
+func (_e *MockTransaction_Expecter) StartChild(operation any, opts ...any) *MockTransaction_StartChild_Call {
 	return &MockTransaction_StartChild_Call{Call: _e.mock.On("StartChild",
-		append([]interface{}{operation}, opts...)...)}
+		append([]any{operation}, opts...)...)}
 }
 
 func (_c *MockTransaction_StartChild_Call) Run(run func(operation string, opts ...SpanOption)) *MockTransaction_StartChild_Call {

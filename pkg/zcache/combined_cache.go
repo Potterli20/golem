@@ -19,7 +19,7 @@ type combinedCache struct {
 	metricsServer      metrics.TaskMetrics
 }
 
-func (c *combinedCache) Set(ctx context.Context, key string, value interface{}, ttl time.Duration) error {
+func (c *combinedCache) Set(ctx context.Context, key string, value any, ttl time.Duration) error {
 	c.logger.Debugf("set key on combined cache, key: [%s]", key)
 
 	if err := c.remoteCache.Set(ctx, key, value, ttl); err != nil {
@@ -37,7 +37,7 @@ func (c *combinedCache) Set(ctx context.Context, key string, value interface{}, 
 	return nil
 }
 
-func (c *combinedCache) Get(ctx context.Context, key string, data interface{}) error {
+func (c *combinedCache) Get(ctx context.Context, key string, data any) error {
 	c.logger.Debugf("get key on combined cache, key: [%s]", key)
 
 	err := c.localCache.Get(ctx, key, data)

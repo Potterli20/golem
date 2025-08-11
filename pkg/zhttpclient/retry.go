@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/cenkalti/backoff/v4"
 	zbackoff "github.com/Potterli20/golem/pkg/zhttpclient/backoff"
+	"github.com/cenkalti/backoff/v4"
 )
 
 // BackoffFn is a function that returns a backoff duration.

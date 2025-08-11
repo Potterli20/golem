@@ -28,7 +28,7 @@ type Config struct {
 
 type Field struct {
 	Key   string
-	Value interface{}
+	Value any
 }
 
 type Logger struct {
@@ -44,7 +44,7 @@ func InitLogger(config Config) {
 	zap.ReplaceGlobals(baseLogger)
 }
 
-func NewLogger(opts ...interface{}) *Logger {
+func NewLogger(opts ...any) *Logger {
 	var config *Config
 	var zapFields []zap.Field
 

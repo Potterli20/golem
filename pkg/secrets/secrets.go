@@ -71,7 +71,7 @@ func resolveSecretForKey(ctx context.Context, key string) error {
 // getAllProviders returns all registered providers as a slice.
 func getAllProviders() []SecretProvider {
 	var result []SecretProvider
-	providersMap.Range(func(_, value interface{}) bool {
+	providersMap.Range(func(_, value any) bool {
 		result = append(result, value.(SecretProvider))
 		return true
 	})

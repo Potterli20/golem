@@ -29,7 +29,7 @@ type MockspanOptionFunc_Execute_Call struct {
 
 // Execute is a helper method to define mock.On call
 //   - _a0 Span
-func (_e *MockspanOptionFunc_Expecter) Execute(_a0 interface{}) *MockspanOptionFunc_Execute_Call {
+func (_e *MockspanOptionFunc_Expecter) Execute(_a0 any) *MockspanOptionFunc_Execute_Call {
 	return &MockspanOptionFunc_Execute_Call{Call: _e.mock.On("Execute", _a0)}
 }
 

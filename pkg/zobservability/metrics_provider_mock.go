@@ -50,7 +50,7 @@ type MockMetricsProvider_AddToCounter_Call struct {
 //   - name string
 //   - value float64
 //   - labels map[string]string
-func (_e *MockMetricsProvider_Expecter) AddToCounter(ctx interface{}, name interface{}, value interface{}, labels interface{}) *MockMetricsProvider_AddToCounter_Call {
+func (_e *MockMetricsProvider_Expecter) AddToCounter(ctx any, name any, value any, labels any) *MockMetricsProvider_AddToCounter_Call {
 	return &MockMetricsProvider_AddToCounter_Call{Call: _e.mock.On("AddToCounter", ctx, name, value, labels)}
 }
 
@@ -99,7 +99,7 @@ type MockMetricsProvider_AddToGauge_Call struct {
 //   - name string
 //   - value float64
 //   - labels map[string]string
-func (_e *MockMetricsProvider_Expecter) AddToGauge(ctx interface{}, name interface{}, value interface{}, labels interface{}) *MockMetricsProvider_AddToGauge_Call {
+func (_e *MockMetricsProvider_Expecter) AddToGauge(ctx any, name any, value any, labels any) *MockMetricsProvider_AddToGauge_Call {
 	return &MockMetricsProvider_AddToGauge_Call{Call: _e.mock.On("AddToGauge", ctx, name, value, labels)}
 }
 
@@ -147,7 +147,7 @@ type MockMetricsProvider_IncrementCounter_Call struct {
 //   - ctx context.Context
 //   - name string
 //   - labels map[string]string
-func (_e *MockMetricsProvider_Expecter) IncrementCounter(ctx interface{}, name interface{}, labels interface{}) *MockMetricsProvider_IncrementCounter_Call {
+func (_e *MockMetricsProvider_Expecter) IncrementCounter(ctx any, name any, labels any) *MockMetricsProvider_IncrementCounter_Call {
 	return &MockMetricsProvider_IncrementCounter_Call{Call: _e.mock.On("IncrementCounter", ctx, name, labels)}
 }
 
@@ -241,7 +241,7 @@ type MockMetricsProvider_RecordDuration_Call struct {
 //   - name string
 //   - duration time.Duration
 //   - labels map[string]string
-func (_e *MockMetricsProvider_Expecter) RecordDuration(ctx interface{}, name interface{}, duration interface{}, labels interface{}) *MockMetricsProvider_RecordDuration_Call {
+func (_e *MockMetricsProvider_Expecter) RecordDuration(ctx any, name any, duration any, labels any) *MockMetricsProvider_RecordDuration_Call {
 	return &MockMetricsProvider_RecordDuration_Call{Call: _e.mock.On("RecordDuration", ctx, name, duration, labels)}
 }
 
@@ -290,7 +290,7 @@ type MockMetricsProvider_RecordHistogram_Call struct {
 //   - name string
 //   - value float64
 //   - labels map[string]string
-func (_e *MockMetricsProvider_Expecter) RecordHistogram(ctx interface{}, name interface{}, value interface{}, labels interface{}) *MockMetricsProvider_RecordHistogram_Call {
+func (_e *MockMetricsProvider_Expecter) RecordHistogram(ctx any, name any, value any, labels any) *MockMetricsProvider_RecordHistogram_Call {
 	return &MockMetricsProvider_RecordHistogram_Call{Call: _e.mock.On("RecordHistogram", ctx, name, value, labels)}
 }
 
@@ -338,7 +338,7 @@ type MockMetricsProvider_RegisterCounter_Call struct {
 //   - name string
 //   - help string
 //   - labelNames []string
-func (_e *MockMetricsProvider_Expecter) RegisterCounter(name interface{}, help interface{}, labelNames interface{}) *MockMetricsProvider_RegisterCounter_Call {
+func (_e *MockMetricsProvider_Expecter) RegisterCounter(name any, help any, labelNames any) *MockMetricsProvider_RegisterCounter_Call {
 	return &MockMetricsProvider_RegisterCounter_Call{Call: _e.mock.On("RegisterCounter", name, help, labelNames)}
 }
 
@@ -386,7 +386,7 @@ type MockMetricsProvider_RegisterGauge_Call struct {
 //   - name string
 //   - help string
 //   - labelNames []string
-func (_e *MockMetricsProvider_Expecter) RegisterGauge(name interface{}, help interface{}, labelNames interface{}) *MockMetricsProvider_RegisterGauge_Call {
+func (_e *MockMetricsProvider_Expecter) RegisterGauge(name any, help any, labelNames any) *MockMetricsProvider_RegisterGauge_Call {
 	return &MockMetricsProvider_RegisterGauge_Call{Call: _e.mock.On("RegisterGauge", name, help, labelNames)}
 }
 
@@ -435,7 +435,7 @@ type MockMetricsProvider_RegisterHistogram_Call struct {
 //   - help string
 //   - labelNames []string
 //   - buckets []float64
-func (_e *MockMetricsProvider_Expecter) RegisterHistogram(name interface{}, help interface{}, labelNames interface{}, buckets interface{}) *MockMetricsProvider_RegisterHistogram_Call {
+func (_e *MockMetricsProvider_Expecter) RegisterHistogram(name any, help any, labelNames any, buckets any) *MockMetricsProvider_RegisterHistogram_Call {
 	return &MockMetricsProvider_RegisterHistogram_Call{Call: _e.mock.On("RegisterHistogram", name, help, labelNames, buckets)}
 }
 
@@ -484,7 +484,7 @@ type MockMetricsProvider_SetGauge_Call struct {
 //   - name string
 //   - value float64
 //   - labels map[string]string
-func (_e *MockMetricsProvider_Expecter) SetGauge(ctx interface{}, name interface{}, value interface{}, labels interface{}) *MockMetricsProvider_SetGauge_Call {
+func (_e *MockMetricsProvider_Expecter) SetGauge(ctx any, name any, value any, labels any) *MockMetricsProvider_SetGauge_Call {
 	return &MockMetricsProvider_SetGauge_Call{Call: _e.mock.On("SetGauge", ctx, name, value, labels)}
 }
 

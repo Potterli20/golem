@@ -85,11 +85,11 @@ func (_m *MockZRequest) SetBody(body io.Reader) ZRequest {
 }
 
 // SetError provides a mock function with given fields: err
-func (_m *MockZRequest) SetError(err interface{}) ZRequest {
+func (_m *MockZRequest) SetError(err any) ZRequest {
 	ret := _m.Called(err)
 
 	var r0 ZRequest
-	if rf, ok := ret.Get(0).(func(interface{}) ZRequest); ok {
+	if rf, ok := ret.Get(0).(func(any) ZRequest); ok {
 		r0 = rf(err)
 	} else {
 		if ret.Get(0) != nil {
@@ -133,11 +133,11 @@ func (_m *MockZRequest) SetQueryParams(params url.Values) ZRequest {
 }
 
 // SetResult provides a mock function with given fields: result
-func (_m *MockZRequest) SetResult(result interface{}) ZRequest {
+func (_m *MockZRequest) SetResult(result any) ZRequest {
 	ret := _m.Called(result)
 
 	var r0 ZRequest
-	if rf, ok := ret.Get(0).(func(interface{}) ZRequest); ok {
+	if rf, ok := ret.Get(0).(func(any) ZRequest); ok {
 		r0 = rf(result)
 	} else {
 		if ret.Get(0) != nil {

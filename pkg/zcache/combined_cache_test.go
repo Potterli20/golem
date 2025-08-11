@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stretchr/testify/suite"
 	logger2 "github.com/Potterli20/golem/pkg/logger"
 	"github.com/Potterli20/golem/pkg/metrics"
+	"github.com/stretchr/testify/suite"
 
 	"github.com/alicebob/miniredis/v2"
 )

@@ -55,6 +55,6 @@ func (e *signozEvent) Capture() {
 	// as the span events are already recorded when SetError, SetTag, etc. are called
 }
 
-func (e *signozEvent) SetData(key string, value interface{}) {
+func (e *signozEvent) SetData(key string, value any) {
 	setSpanAttribute(e.span, key, value)
 }

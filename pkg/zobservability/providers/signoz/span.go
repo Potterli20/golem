@@ -16,7 +16,7 @@ func (s *signozSpan) SetTag(key, value string) {
 	s.span.SetAttributes(attribute.String(key, value))
 }
 
-func (s *signozSpan) SetData(key string, value interface{}) {
+func (s *signozSpan) SetData(key string, value any) {
 	setSpanAttribute(s.span, key, value)
 }
 

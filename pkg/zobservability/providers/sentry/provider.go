@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/getsentry/sentry-go"
 	"github.com/Potterli20/golem/pkg/zobservability"
+	"github.com/getsentry/sentry-go"
 )
 
 // Config holds the configuration for the Sentry observer

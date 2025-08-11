@@ -20,30 +20,30 @@ const (
 )
 
 type ZDatabase interface {
-	Find(out interface{}, where ...interface{}) ZDatabase
-	First(dest interface{}, where ...interface{}) ZDatabase
-	FirstOrCreate(dest interface{}, where ...interface{}) ZDatabase
-	Scan(dest interface{}) ZDatabase
+	Find(out any, where ...any) ZDatabase
+	First(dest any, where ...any) ZDatabase
+	FirstOrCreate(dest any, where ...any) ZDatabase
+	Scan(dest any) ZDatabase
 	Rows() (*sql.Rows, error)
-	ScanRows(rows *sql.Rows, result interface{}) error
-	Select(query interface{}, args ...interface{}) ZDatabase
-	Where(query interface{}, args ...interface{}) ZDatabase
-	Joins(query string, args ...interface{}) ZDatabase
+	ScanRows(rows *sql.Rows, result any) error
+	Select(query any, args ...any) ZDatabase
+	Where(query any, args ...any) ZDatabase
+	Joins(query string, args ...any) ZDatabase
 	UnionAll(subQuery1 ZDatabase, subQuery2 ZDatabase) ZDatabase
 	UnionDistinct(subQuery1 ZDatabase, subQuery2 ZDatabase) ZDatabase
 	Limit(limit int) ZDatabase
 	Offset(offset int) ZDatabase
-	Order(value interface{}) ZDatabase
-	Distinct(args ...interface{}) ZDatabase
+	Order(value any) ZDatabase
+	Distinct(args ...any) ZDatabase
 	Count(count *int64) ZDatabase
 	Group(name string) ZDatabase
-	Create(value interface{}) ZDatabase
-	Updates(value interface{}) ZDatabase
-	Update(column string, value interface{}) ZDatabase
-	Delete(value interface{}, where ...interface{}) ZDatabase
-	Raw(sql string, values ...interface{}) ZDatabase
-	Exec(sql string, values ...interface{}) ZDatabase
-	Table(name string, args ...interface{}) ZDatabase
+	Create(value any) ZDatabase
+	Updates(value any) ZDatabase
+	Update(column string, value any) ZDatabase
+	Delete(value any, where ...any) ZDatabase
+	Raw(sql string, values ...any) ZDatabase
+	Exec(sql string, values ...any) ZDatabase
+	Table(name string, args ...any) ZDatabase
 	Transaction(fc func(tx ZDatabase) error, opts ...*sql.TxOptions) (err error)
 	Clauses(conds ...clause.Expression) ZDatabase
 	WithContext(ctx context.Context) ZDatabase

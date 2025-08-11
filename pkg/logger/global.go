@@ -49,31 +49,31 @@ func Fatal(msg string) {
 	L().Fatal(msg)
 }
 
-func Infof(template string, args ...interface{}) {
+func Infof(template string, args ...any) {
 	S().Infof(template, args...)
 }
 
-func Debugf(template string, args ...interface{}) {
+func Debugf(template string, args ...any) {
 	S().Debugf(template, args...)
 }
 
-func Warnf(template string, args ...interface{}) {
+func Warnf(template string, args ...any) {
 	S().Warnf(template, args...)
 }
 
-func Errorf(template string, args ...interface{}) {
+func Errorf(template string, args ...any) {
 	S().Errorf(template, args...)
 }
 
-func DPanicf(template string, args ...interface{}) {
+func DPanicf(template string, args ...any) {
 	S().DPanicf(template, args...)
 }
 
-func Panicf(template string, args ...interface{}) {
+func Panicf(template string, args ...any) {
 	S().Panicf(template, args...)
 }
 
-func Fatalf(template string, args ...interface{}) {
+func Fatalf(template string, args ...any) {
 	S().Fatalf(template, args...)
 }
 

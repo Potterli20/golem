@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stretchr/testify/assert"
 	"github.com/Potterli20/golem/pkg/logger"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestName(t *testing.T) {

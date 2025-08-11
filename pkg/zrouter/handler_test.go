@@ -2,8 +2,8 @@ package zrouter
 
 import (
 	"bytes"
-	"github.com/stretchr/testify/suite"
 	"github.com/Potterli20/golem/pkg/zrouter/domain"
+	"github.com/stretchr/testify/suite"
 	"net/http"
 	"net/http/httptest"
 	"testing"

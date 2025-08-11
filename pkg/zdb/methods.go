@@ -16,23 +16,23 @@ func (z *zDatabase) GetDbConnection() *gorm.DB {
 	return z.db
 }
 
-func (z *zDatabase) Exec(query string, values ...interface{}) ZDatabase {
+func (z *zDatabase) Exec(query string, values ...any) ZDatabase {
 	return wrap(z.db.Exec(query, values...))
 }
 
-func (z *zDatabase) Find(out interface{}, where ...interface{}) ZDatabase {
+func (z *zDatabase) Find(out any, where ...any) ZDatabase {
 	return wrap(z.db.Find(out, where...))
 }
 
-func (z *zDatabase) First(dest interface{}, where ...interface{}) ZDatabase {
+func (z *zDatabase) First(dest any, where ...any) ZDatabase {
 	return wrap(z.db.First(dest, where...))
 }
 
-func (z *zDatabase) FirstOrCreate(dest interface{}, where ...interface{}) ZDatabase {
+func (z *zDatabase) FirstOrCreate(dest any, where ...any) ZDatabase {
 	return wrap(z.db.FirstOrCreate(dest, where...))
 }
 
-func (z *zDatabase) Scan(dest interface{}) ZDatabase {
+func (z *zDatabase) Scan(dest any) ZDatabase {
 	return wrap(z.db.Scan(dest))
 }
 
@@ -44,31 +44,31 @@ func (z *zDatabase) Rows() (*sql.Rows, error) {
 	return z.db.Rows()
 }
 
-func (z *zDatabase) ScanRows(rows *sql.Rows, result interface{}) error {
+func (z *zDatabase) ScanRows(rows *sql.Rows, result any) error {
 	return z.db.ScanRows(rows, result)
 }
 
-func (z *zDatabase) Create(value interface{}) ZDatabase {
+func (z *zDatabase) Create(value any) ZDatabase {
 	return wrap(z.db.Create(value))
 }
 
-func (z *zDatabase) Updates(value interface{}) ZDatabase {
+func (z *zDatabase) Updates(value any) ZDatabase {
 	return wrap(z.db.Updates(value))
 }
 
-func (z *zDatabase) Update(column string, value interface{}) ZDatabase {
+func (z *zDatabase) Update(column string, value any) ZDatabase {
 	return wrap(z.db.Update(column, value))
 }
 
-func (z *zDatabase) Delete(value interface{}, where ...interface{}) ZDatabase {
+func (z *zDatabase) Delete(value any, where ...any) ZDatabase {
 	return wrap(z.db.Delete(value, where...))
 }
 
-func (z *zDatabase) Raw(sql string, values ...interface{}) ZDatabase {
+func (z *zDatabase) Raw(sql string, values ...any) ZDatabase {
 	return wrap(z.db.Raw(sql, values...))
 }
 
-func (z *zDatabase) Table(name string, args ...interface{}) ZDatabase {
+func (z *zDatabase) Table(name string, args ...any) ZDatabase {
 	return wrap(z.db.Table(name, args...))
 }
 
@@ -76,15 +76,15 @@ func (z *zDatabase) Clauses(conds ...clause.Expression) ZDatabase {
 	return wrap(z.db.Clauses(conds...))
 }
 
-func (z *zDatabase) Select(query interface{}, args ...interface{}) ZDatabase {
+func (z *zDatabase) Select(query any, args ...any) ZDatabase {
 	return wrap(z.db.Select(query, args...))
 }
 
-func (z *zDatabase) Where(query interface{}, args ...interface{}) ZDatabase {
+func (z *zDatabase) Where(query any, args ...any) ZDatabase {
 	return wrap(z.db.Where(query, args...))
 }
 
-func (z *zDatabase) Joins(query string, args ...interface{}) ZDatabase {
+func (z *zDatabase) Joins(query string, args ...any) ZDatabase {
 	return wrap(z.db.Joins(query, args...))
 }
 
@@ -114,11 +114,11 @@ func (z *zDatabase) Offset(offset int) ZDatabase {
 	return wrap(z.db.Offset(offset))
 }
 
-func (z *zDatabase) Order(value interface{}) ZDatabase {
+func (z *zDatabase) Order(value any) ZDatabase {
 	return wrap(z.db.Order(value))
 }
 
-func (z *zDatabase) Distinct(args ...interface{}) ZDatabase {
+func (z *zDatabase) Distinct(args ...any) ZDatabase {
 	return wrap(z.db.Distinct(args...))
 }
 

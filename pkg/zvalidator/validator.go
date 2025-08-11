@@ -35,7 +35,7 @@ func (v *ValidationErrors) AddError(field, message string) *ValidationErrors {
 }
 
 // AddErrorf adds a formatted validation error and returns the validator for method chaining
-func (v *ValidationErrors) AddErrorf(field, format string, args ...interface{}) *ValidationErrors {
+func (v *ValidationErrors) AddErrorf(field, format string, args ...any) *ValidationErrors {
 	return v.AddError(field, fmt.Sprintf(format, args...))
 }
 

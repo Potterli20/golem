@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/Potterli20/golem/pkg/logger"
 	"github.com/dgraph-io/ristretto"
 	"github.com/go-redis/redis/v8"
-	"github.com/Potterli20/golem/pkg/logger"
 )
 
 type ZCacheStats struct {
@@ -16,8 +16,8 @@ type ZCacheStats struct {
 }
 
 type ZCache interface {
-	Set(ctx context.Context, key string, value interface{}, ttl time.Duration) error
-	Get(ctx context.Context, key string, data interface{}) error
+	Set(ctx context.Context, key string, value any, ttl time.Duration) error
+	Get(ctx context.Context, key string, data any) error
 	Delete(ctx context.Context, key string) error
 	GetStats() ZCacheStats
 	IsNotFoundError(err error) bool

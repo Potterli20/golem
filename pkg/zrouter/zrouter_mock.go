@@ -1,8 +1,8 @@
 package zrouter
 
 import (
-	"github.com/stretchr/testify/mock"
 	"github.com/Potterli20/golem/pkg/zrouter/zmiddlewares"
+	"github.com/stretchr/testify/mock"
 	"net/http"
 )
 

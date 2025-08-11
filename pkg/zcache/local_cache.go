@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/dgraph-io/ristretto"
 	"github.com/Potterli20/golem/pkg/logger"
 	"github.com/Potterli20/golem/pkg/metrics"
+	"github.com/dgraph-io/ristretto"
 )
 
 //nolint:unused,varcheck,deadcode
@@ -53,7 +53,7 @@ type localCache struct {
 	metricsServer metrics.TaskMetrics
 }
 
-func (c *localCache) Set(_ context.Context, key string, value interface{}, ttl time.Duration) error {
+func (c *localCache) Set(_ context.Context, key string, value any, ttl time.Duration) error {
 	realKey := getKeyWithPrefix(c.prefix, key)
 
 	b, err := json.Marshal(value)
@@ -76,7 +76,7 @@ func (c *localCache) Set(_ context.Context, key string, value interface{}, ttl t
 	return nil
 }
 
-func (c *localCache) Get(_ context.Context, key string, data interface{}) error {
+func (c *localCache) Get(_ context.Context, key string, data any) error {
 	realKey := getKeyWithPrefix(c.prefix, key)
 
 	val, found := c.client.Get(realKey)

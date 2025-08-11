@@ -14,9 +14,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cenkalti/backoff/v4"
 	"github.com/Potterli20/golem/pkg/zconverters"
 	"github.com/Potterli20/golem/pkg/zhttpclient"
+	"github.com/cenkalti/backoff/v4"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
@@ -457,8 +457,8 @@ func TestHTTPClient_DecodeResult(t *testing.T) {
 	tb := []struct {
 		name     string
 		srv      *testSrv
-		wantResp interface{}
-		wantErr  interface{}
+		wantResp any
+		wantErr  any
 	}{
 		{
 			name:     "succesfully decode into result",

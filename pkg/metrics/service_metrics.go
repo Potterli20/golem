@@ -1,10 +1,10 @@
 package metrics
 
 import (
-	"github.com/shirou/gopsutil/v4/cpu"
-	"github.com/shirou/gopsutil/v4/net"
 	"github.com/Potterli20/golem/pkg/logger"
 	"github.com/Potterli20/golem/pkg/metrics/collectors"
+	"github.com/shirou/gopsutil/v4/cpu"
+	"github.com/shirou/gopsutil/v4/net"
 	"runtime"
 	"runtime/pprof"
 	"time"

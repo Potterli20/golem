@@ -1,8 +1,8 @@
 package zmiddlewares
 
 import (
-	"github.com/google/uuid"
 	"github.com/Potterli20/golem/pkg/logger"
+	"github.com/google/uuid"
 	"net/http"
 )
 

@@ -3,10 +3,10 @@ package zcache
 import (
 	"time"
 
-	"github.com/dgraph-io/ristretto"
-	"github.com/go-redis/redis/v8"
 	"github.com/Potterli20/golem/pkg/logger"
 	"github.com/Potterli20/golem/pkg/metrics"
+	"github.com/dgraph-io/ristretto"
+	"github.com/go-redis/redis/v8"
 )
 
 const (

@@ -3,8 +3,8 @@ package zdb
 import (
 	"testing"
 
-	"github.com/stretchr/testify/assert"
 	"github.com/Potterli20/golem/pkg/zdb/zdbconfig"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestGetConfigWithDefaults(t *testing.T) {

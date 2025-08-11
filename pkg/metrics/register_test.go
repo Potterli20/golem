@@ -1,10 +1,10 @@
 package metrics
 
 import (
+	"github.com/Potterli20/golem/pkg/metrics/collectors"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
-	"github.com/Potterli20/golem/pkg/metrics/collectors"
 	"testing"
 )
 

@@ -4,8 +4,8 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/stretchr/testify/mock"
 	"github.com/Potterli20/golem/pkg/zdb/zdbconfig"
+	"github.com/stretchr/testify/mock"
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"
 )
@@ -19,22 +19,22 @@ func (m *MockZDatabase) GetDbConnection() *gorm.DB {
 	return args.Get(0).(*gorm.DB)
 }
 
-func (m *MockZDatabase) Find(dest interface{}, conds ...interface{}) ZDatabase {
-	args := m.Called(append([]interface{}{dest}, conds...)...)
+func (m *MockZDatabase) Find(dest any, conds ...any) ZDatabase {
+	args := m.Called(append([]any{dest}, conds...)...)
 	return args.Get(0).(ZDatabase)
 }
 
-func (m *MockZDatabase) First(dest interface{}, conds ...interface{}) ZDatabase {
-	args := m.Called(append([]interface{}{dest}, conds...)...)
+func (m *MockZDatabase) First(dest any, conds ...any) ZDatabase {
+	args := m.Called(append([]any{dest}, conds...)...)
 	return args.Get(0).(ZDatabase)
 }
 
-func (m *MockZDatabase) FirstOrCreate(dest interface{}, conds ...interface{}) ZDatabase {
-	args := m.Called(append([]interface{}{dest}, conds...)...)
+func (m *MockZDatabase) FirstOrCreate(dest any, conds ...any) ZDatabase {
+	args := m.Called(append([]any{dest}, conds...)...)
 	return args.Get(0).(ZDatabase)
 }
 
-func (m *MockZDatabase) Scan(dest interface{}) ZDatabase {
+func (m *MockZDatabase) Scan(dest any) ZDatabase {
 	m.Called(dest)
 	return m
 }
@@ -44,48 +44,48 @@ func (m *MockZDatabase) Rows() (*sql.Rows, error) {
 	return args.Get(0).(*sql.Rows), args.Error(1)
 }
 
-func (m *MockZDatabase) ScanRows(rows *sql.Rows, result interface{}) error {
+func (m *MockZDatabase) ScanRows(rows *sql.Rows, result any) error {
 	args := m.Called(rows, result)
 	return args.Error(0)
 }
 
-func (m *MockZDatabase) Create(value interface{}) ZDatabase {
+func (m *MockZDatabase) Create(value any) ZDatabase {
 	m.Called(value)
 	return m
 }
 
-func (m *MockZDatabase) Updates(value interface{}) ZDatabase {
+func (m *MockZDatabase) Updates(value any) ZDatabase {
 	m.Called(value)
 	return m
 }
 
-func (m *MockZDatabase) Update(column string, value interface{}) ZDatabase {
+func (m *MockZDatabase) Update(column string, value any) ZDatabase {
 	m.Called(column, value)
 	return m
 }
 
-func (m *MockZDatabase) Delete(value interface{}, conds ...interface{}) ZDatabase {
-	args := m.Called(append([]interface{}{value}, conds...)...)
+func (m *MockZDatabase) Delete(value any, conds ...any) ZDatabase {
+	args := m.Called(append([]any{value}, conds...)...)
 	return args.Get(0).(ZDatabase)
 }
 
-func (m *MockZDatabase) Raw(sql string, values ...interface{}) ZDatabase {
-	args := m.Called(append([]interface{}{sql}, values...)...)
+func (m *MockZDatabase) Raw(sql string, values ...any) ZDatabase {
+	args := m.Called(append([]any{sql}, values...)...)
 	return args.Get(0).(ZDatabase)
 }
 
-func (m *MockZDatabase) Select(query interface{}, values ...interface{}) ZDatabase {
-	args := m.Called(append([]interface{}{query}, values...)...)
+func (m *MockZDatabase) Select(query any, values ...any) ZDatabase {
+	args := m.Called(append([]any{query}, values...)...)
 	return args.Get(0).(ZDatabase)
 }
 
-func (m *MockZDatabase) Where(query interface{}, values ...interface{}) ZDatabase {
-	args := m.Called(append([]interface{}{query}, values...)...)
+func (m *MockZDatabase) Where(query any, values ...any) ZDatabase {
+	args := m.Called(append([]any{query}, values...)...)
 	return args.Get(0).(ZDatabase)
 }
 
-func (m *MockZDatabase) Joins(query string, values ...interface{}) ZDatabase {
-	args := m.Called(append([]interface{}{query}, values...)...)
+func (m *MockZDatabase) Joins(query string, values ...any) ZDatabase {
+	args := m.Called(append([]any{query}, values...)...)
 	return args.Get(0).(ZDatabase)
 }
 
@@ -109,13 +109,13 @@ func (m *MockZDatabase) Offset(offset int) ZDatabase {
 	return args.Get(0).(ZDatabase)
 }
 
-func (m *MockZDatabase) Exec(sql string, values ...interface{}) ZDatabase {
+func (m *MockZDatabase) Exec(sql string, values ...any) ZDatabase {
 	m.Called(sql, values)
 	return m
 }
 
-func (m *MockZDatabase) Table(name string, args ...interface{}) ZDatabase {
-	m.Called(append([]interface{}{name}, args...)...)
+func (m *MockZDatabase) Table(name string, args ...any) ZDatabase {
+	m.Called(append([]any{name}, args...)...)
 	return m
 }
 
@@ -139,12 +139,12 @@ func (m *MockZDatabase) RowsAffected() int64 {
 	return args.Get(0).(int64)
 }
 
-func (m *MockZDatabase) Order(value interface{}) ZDatabase {
+func (m *MockZDatabase) Order(value any) ZDatabase {
 	args := m.Called(value)
 	return args.Get(0).(ZDatabase)
 }
 
-func (m *MockZDatabase) Distinct(params ...interface{}) ZDatabase {
+func (m *MockZDatabase) Distinct(params ...any) ZDatabase {
 	args := m.Called(params)
 	return args.Get(0).(ZDatabase)
 }

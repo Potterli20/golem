@@ -42,31 +42,31 @@ func (l *Logger) Fatal(msg string) {
 	l.logger.Fatal(msg)
 }
 
-func (l *Logger) Infof(template string, args ...interface{}) {
+func (l *Logger) Infof(template string, args ...any) {
 	l.logger.Sugar().Infof(template, args...)
 }
 
-func (l *Logger) Debugf(template string, args ...interface{}) {
+func (l *Logger) Debugf(template string, args ...any) {
 	l.logger.Sugar().Debugf(template, args...)
 }
 
-func (l *Logger) Warnf(template string, args ...interface{}) {
+func (l *Logger) Warnf(template string, args ...any) {
 	l.logger.Sugar().Warnf(template, args...)
 }
 
-func (l *Logger) Errorf(template string, args ...interface{}) {
+func (l *Logger) Errorf(template string, args ...any) {
 	l.logger.Sugar().Errorf(template, args...)
 }
 
-func (l *Logger) DPanicf(template string, args ...interface{}) {
+func (l *Logger) DPanicf(template string, args ...any) {
 	l.logger.Sugar().DPanicf(template, args...)
 }
 
-func (l *Logger) Panicf(template string, args ...interface{}) {
+func (l *Logger) Panicf(template string, args ...any) {
 	l.logger.Sugar().Panicf(template, args...)
 }
 
-func (l *Logger) Fatalf(template string, args ...interface{}) {
+func (l *Logger) Fatalf(template string, args ...any) {
 	l.logger.Sugar().Fatalf(template, args...)
 }
 

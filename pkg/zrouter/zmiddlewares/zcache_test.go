@@ -12,10 +12,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/Potterli20/golem/pkg/zcache"
 	"github.com/go-chi/chi/v5"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
-	"github.com/Potterli20/golem/pkg/zcache"
 )
 
 func TestCacheMiddleware(t *testing.T) {

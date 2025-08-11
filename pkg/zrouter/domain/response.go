@@ -18,13 +18,13 @@ type ServiceResponse interface {
 	Header() http.Header
 	ResponseBytes() ([]byte, error)
 	ResponseFormat() string
-	Contents() interface{}
+	Contents() any
 }
 
 type defaultServiceResponse struct {
 	status        int
 	header        http.Header
-	response      interface{}
+	response      any
 	once          sync.Once
 	responseBytes []byte
 	marshalError  error
@@ -60,11 +60,11 @@ func (d *defaultServiceResponse) ResponseBytes() ([]byte, error) {
 	return d.responseBytes, d.marshalError
 }
 
-func (d *defaultServiceResponse) Contents() interface{} {
+func (d *defaultServiceResponse) Contents() any {
 	return d.response
 }
 
-func NewServiceResponse(status int, response interface{}) ServiceResponse {
+func NewServiceResponse(status int, response any) ServiceResponse {
 	return &defaultServiceResponse{
 		status:   status,
 		response: response,
@@ -72,7 +72,7 @@ func NewServiceResponse(status int, response interface{}) ServiceResponse {
 	}
 }
 
-func NewServiceResponseWithHeader(status int, response interface{}, header http.Header) ServiceResponse {
+func NewServiceResponseWithHeader(status int, response any, header http.Header) ServiceResponse {
 	return &defaultServiceResponse{
 		status:   status,
 		response: response,

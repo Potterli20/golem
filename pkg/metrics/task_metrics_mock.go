@@ -25,11 +25,11 @@ func (_m *MockTaskMetrics) AppName() string {
 
 // DecrementMetric provides a mock function with given fields: name, labels
 func (_m *MockTaskMetrics) DecrementMetric(name string, labels ...string) error {
-	_va := make([]interface{}, len(labels))
+	_va := make([]any, len(labels))
 	for _i := range labels {
 		_va[_i] = labels[_i]
 	}
-	var _ca []interface{}
+	var _ca []any
 	_ca = append(_ca, name)
 	_ca = append(_ca, _va...)
 	ret := _m.Called(_ca...)
@@ -46,11 +46,11 @@ func (_m *MockTaskMetrics) DecrementMetric(name string, labels ...string) error 
 
 // IncrementMetric provides a mock function with given fields: name, labels
 func (_m *MockTaskMetrics) IncrementMetric(name string, labels ...string) error {
-	_va := make([]interface{}, len(labels))
+	_va := make([]any, len(labels))
 	for _i := range labels {
 		_va[_i] = labels[_i]
 	}
-	var _ca []interface{}
+	var _ca []any
 	_ca = append(_ca, name)
 	_ca = append(_ca, _va...)
 	ret := _m.Called(_ca...)
@@ -123,11 +123,11 @@ func (_m *MockTaskMetrics) Stop() error {
 
 // UpdateMetric provides a mock function with given fields: name, value, labels
 func (_m *MockTaskMetrics) UpdateMetric(name string, value float64, labels ...string) error {
-	_va := make([]interface{}, len(labels))
+	_va := make([]any, len(labels))
 	for _i := range labels {
 		_va[_i] = labels[_i]
 	}
-	var _ca []interface{}
+	var _ca []any
 	_ca = append(_ca, name, value)
 	_ca = append(_ca, _va...)
 	ret := _m.Called(_ca...)

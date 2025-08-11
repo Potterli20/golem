@@ -2,10 +2,10 @@ package zmiddlewares
 
 import (
 	"encoding/json"
-	"github.com/go-chi/chi/v5"
-	"github.com/stretchr/testify/assert"
 	"github.com/Potterli20/golem/pkg/logger"
 	"github.com/Potterli20/golem/pkg/zrouter/domain"
+	"github.com/go-chi/chi/v5"
+	"github.com/stretchr/testify/assert"
 	"net/http"
 	"net/http/httptest"
 	"testing"

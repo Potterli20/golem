@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/Potterli20/golem/pkg/logger"
 	"github.com/dgraph-io/ristretto"
 	"github.com/stretchr/testify/suite"
-	"github.com/Potterli20/golem/pkg/logger"
 )
 
 const (

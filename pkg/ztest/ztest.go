@@ -12,7 +12,7 @@ import (
 type RequestAssertionParams struct {
 	T                   *testing.T
 	Router              http.Handler
-	Responses           map[string]interface{}
+	Responses           map[string]any
 	Method              string
 	URL                 string
 	ExpectedStatusCode  int
@@ -30,7 +30,7 @@ func MakeRequestAndAssert(params RequestAssertionParams) {
 	params.Router.ServeHTTP(w, req)
 	assert.Equal(params.T, params.ExpectedStatusCode, w.Code)
 
-	var obtainedResponse interface{}
+	var obtainedResponse any
 	err = json.Unmarshal(w.Body.Bytes(), &obtainedResponse)
 	if err != nil {
 		params.T.Fatal(err)

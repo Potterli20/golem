@@ -29,7 +29,7 @@ type MockEventOption_ApplyEvent_Call struct {
 
 // ApplyEvent is a helper method to define mock.On call
 //   - _a0 Event
-func (_e *MockEventOption_Expecter) ApplyEvent(_a0 interface{}) *MockEventOption_ApplyEvent_Call {
+func (_e *MockEventOption_Expecter) ApplyEvent(_a0 any) *MockEventOption_ApplyEvent_Call {
 	return &MockEventOption_ApplyEvent_Call{Call: _e.mock.On("ApplyEvent", _a0)}
 }
 

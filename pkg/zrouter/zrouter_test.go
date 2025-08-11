@@ -1,12 +1,12 @@
 package zrouter
 
 import (
-	"github.com/go-chi/chi/v5"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/suite"
 	"github.com/Potterli20/golem/pkg/logger"
 	"github.com/Potterli20/golem/pkg/zrouter/domain"
 	"github.com/Potterli20/golem/pkg/zrouter/zmiddlewares"
+	"github.com/go-chi/chi/v5"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/suite"
 	"net/http"
 	"net/http/httptest"
 	"testing"

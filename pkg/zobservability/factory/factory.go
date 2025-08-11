@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/mitchellh/mapstructure"
 	"github.com/Potterli20/golem/pkg/logger"
 	"github.com/Potterli20/golem/pkg/zobservability"
 	"github.com/Potterli20/golem/pkg/zobservability/providers/sentry"
 	"github.com/Potterli20/golem/pkg/zobservability/providers/signoz"
+	"github.com/mitchellh/mapstructure"
 )
 
 type observerFactory func(config *zobservability.Config, serviceName string) (zobservability.Observer, error)

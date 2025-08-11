@@ -167,7 +167,7 @@ func TestNoopTransaction_SetData(t *testing.T) {
 
 	// Act & Assert - Should not panic
 	assert.NotPanics(t, func() {
-		transaction.SetData("key", map[string]interface{}{"test": "data"})
+		transaction.SetData("key", map[string]any{"test": "data"})
 	})
 }
 

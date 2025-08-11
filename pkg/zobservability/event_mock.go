@@ -61,7 +61,7 @@ type MockEvent_SetError_Call struct {
 
 // SetError is a helper method to define mock.On call
 //   - err error
-func (_e *MockEvent_Expecter) SetError(err interface{}) *MockEvent_SetError_Call {
+func (_e *MockEvent_Expecter) SetError(err any) *MockEvent_SetError_Call {
 	return &MockEvent_SetError_Call{Call: _e.mock.On("SetError", err)}
 }
 
@@ -94,7 +94,7 @@ type MockEvent_SetFingerprint_Call struct {
 
 // SetFingerprint is a helper method to define mock.On call
 //   - fingerprint []string
-func (_e *MockEvent_Expecter) SetFingerprint(fingerprint interface{}) *MockEvent_SetFingerprint_Call {
+func (_e *MockEvent_Expecter) SetFingerprint(fingerprint any) *MockEvent_SetFingerprint_Call {
 	return &MockEvent_SetFingerprint_Call{Call: _e.mock.On("SetFingerprint", fingerprint)}
 }
 
@@ -127,7 +127,7 @@ type MockEvent_SetLevel_Call struct {
 
 // SetLevel is a helper method to define mock.On call
 //   - level Level
-func (_e *MockEvent_Expecter) SetLevel(level interface{}) *MockEvent_SetLevel_Call {
+func (_e *MockEvent_Expecter) SetLevel(level any) *MockEvent_SetLevel_Call {
 	return &MockEvent_SetLevel_Call{Call: _e.mock.On("SetLevel", level)}
 }
 
@@ -161,7 +161,7 @@ type MockEvent_SetTag_Call struct {
 // SetTag is a helper method to define mock.On call
 //   - key string
 //   - value string
-func (_e *MockEvent_Expecter) SetTag(key interface{}, value interface{}) *MockEvent_SetTag_Call {
+func (_e *MockEvent_Expecter) SetTag(key any, value any) *MockEvent_SetTag_Call {
 	return &MockEvent_SetTag_Call{Call: _e.mock.On("SetTag", key, value)}
 }
 
@@ -194,7 +194,7 @@ type MockEvent_SetTags_Call struct {
 
 // SetTags is a helper method to define mock.On call
 //   - tags map[string]string
-func (_e *MockEvent_Expecter) SetTags(tags interface{}) *MockEvent_SetTags_Call {
+func (_e *MockEvent_Expecter) SetTags(tags any) *MockEvent_SetTags_Call {
 	return &MockEvent_SetTags_Call{Call: _e.mock.On("SetTags", tags)}
 }
 
@@ -229,7 +229,7 @@ type MockEvent_SetUser_Call struct {
 //   - id string
 //   - email string
 //   - username string
-func (_e *MockEvent_Expecter) SetUser(id interface{}, email interface{}, username interface{}) *MockEvent_SetUser_Call {
+func (_e *MockEvent_Expecter) SetUser(id any, email any, username any) *MockEvent_SetUser_Call {
 	return &MockEvent_SetUser_Call{Call: _e.mock.On("SetUser", id, email, username)}
 }
 

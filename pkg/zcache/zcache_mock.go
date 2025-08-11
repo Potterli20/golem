@@ -2,8 +2,8 @@ package zcache
 
 import (
 	"context"
-	"github.com/stretchr/testify/mock"
 	"github.com/Potterli20/golem/pkg/metrics"
+	"github.com/stretchr/testify/mock"
 	"time"
 )
 
@@ -26,12 +26,12 @@ func (m *MockZCache) SetupAndMonitorMetrics(appName string, metricsServer metric
 	return args.Get(0).([]error)
 }
 
-func (m *MockZCache) Set(ctx context.Context, key string, value interface{}, ttl time.Duration) error {
+func (m *MockZCache) Set(ctx context.Context, key string, value any, ttl time.Duration) error {
 	args := m.Called(ctx, key, value, ttl)
 	return args.Error(0)
 }
 
-func (m *MockZCache) Get(ctx context.Context, key string, data interface{}) error {
+func (m *MockZCache) Get(ctx context.Context, key string, data any) error {
 	args := m.Called(ctx, key, data)
 	return args.Error(0)
 }
@@ -61,12 +61,12 @@ func (m *MockZCache) FlushAll(ctx context.Context) error {
 	return args.Error(0)
 }
 
-func (m *MockZCache) LPush(ctx context.Context, key string, values ...interface{}) (int64, error) {
+func (m *MockZCache) LPush(ctx context.Context, key string, values ...any) (int64, error) {
 	args := m.Called(ctx, key, values)
 	return args.Get(0).(int64), args.Error(1)
 }
 
-func (m *MockZCache) RPush(ctx context.Context, key string, values ...interface{}) (int64, error) {
+func (m *MockZCache) RPush(ctx context.Context, key string, values ...any) (int64, error) {
 	args := m.Called(ctx, key, values)
 	return args.Get(0).(int64), args.Error(1)
 }
@@ -76,12 +76,12 @@ func (m *MockZCache) SMembers(ctx context.Context, key string) ([]string, error)
 	return args.Get(0).([]string), args.Error(1)
 }
 
-func (m *MockZCache) SAdd(ctx context.Context, key string, members ...interface{}) (int64, error) {
+func (m *MockZCache) SAdd(ctx context.Context, key string, members ...any) (int64, error) {
 	args := m.Called(ctx, key, members)
 	return args.Get(0).(int64), args.Error(1)
 }
 
-func (m *MockZCache) HSet(ctx context.Context, key string, values ...interface{}) (int64, error) {
+func (m *MockZCache) HSet(ctx context.Context, key string, values ...any) (int64, error) {
 	args := m.Called(ctx, key, values)
 	return args.Get(0).(int64), args.Error(1)
 }

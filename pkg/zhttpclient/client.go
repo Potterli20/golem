@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-resty/resty/v2"
 	"github.com/Potterli20/golem/pkg/zconverters"
+	"github.com/go-resty/resty/v2"
 	"go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
 )
 

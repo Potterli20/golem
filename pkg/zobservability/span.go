@@ -5,7 +5,7 @@ import "go.opentelemetry.io/otel/trace"
 // Span represents a unit of work or operation within a transaction
 type Span interface {
 	SetTag(key, value string)
-	SetData(key string, value interface{})
+	SetData(key string, value any)
 	SetError(err error, opts ...trace.EventOption)
 	Finish()
 }
@@ -29,7 +29,7 @@ func WithSpanTag(key, value string) SpanOption {
 }
 
 // WithSpanData adds data to the span
-func WithSpanData(key string, value interface{}) SpanOption {
+func WithSpanData(key string, value any) SpanOption {
 	return spanOptionFunc(func(s Span) {
 		s.SetData(key, value)
 	})

@@ -12,7 +12,7 @@ import (
 
 type CustomZ struct {
 	Score  float64
-	Member interface{}
+	Member any
 }
 
 type RedisStats struct {
@@ -23,11 +23,11 @@ type RemoteCache interface {
 	ZCache
 	Incr(ctx context.Context, key string) (int64, error)
 	Decr(ctx context.Context, key string) (int64, error)
-	LPush(ctx context.Context, key string, values ...interface{}) (int64, error)
-	RPush(ctx context.Context, key string, values ...interface{}) (int64, error)
+	LPush(ctx context.Context, key string, values ...any) (int64, error)
+	RPush(ctx context.Context, key string, values ...any) (int64, error)
 	SMembers(ctx context.Context, key string) ([]string, error)
-	SAdd(ctx context.Context, key string, members ...interface{}) (int64, error)
-	HSet(ctx context.Context, key string, values ...interface{}) (int64, error)
+	SAdd(ctx context.Context, key string, members ...any) (int64, error)
+	HSet(ctx context.Context, key string, values ...any) (int64, error)
 	HGet(ctx context.Context, key, field string) (string, error)
 	ZIncrBy(ctx context.Context, key string, member string, increment float64) (float64, error)
 	ZRevRangeWithScores(ctx context.Context, key string, start, stop int64) ([]CustomZ, error)
@@ -44,7 +44,7 @@ type redisCache struct {
 	metricsServer metrics.TaskMetrics
 }
 
-func (c *redisCache) Set(ctx context.Context, key string, value interface{}, ttl time.Duration) error {
+func (c *redisCache) Set(ctx context.Context, key string, value any, ttl time.Duration) error {
 	realKey := getKeyWithPrefix(c.prefix, key)
 
 	c.logger.Debugf("set key on redis cache, fullKey: [%s], value: [%v]", realKey, value)
@@ -62,7 +62,7 @@ func (c *redisCache) Set(ctx context.Context, key string, value interface{}, ttl
 	return err
 }
 
-func (c *redisCache) Get(ctx context.Context, key string, data interface{}) error {
+func (c *redisCache) Get(ctx context.Context, key string, data any) error {
 	realKey := getKeyWithPrefix(c.prefix, key)
 
 	c.logger.Debugf("get key on redis cache, fullKey: [%s]", realKey)
@@ -113,13 +113,13 @@ func (c *redisCache) FlushAll(ctx context.Context) error {
 	return c.client.FlushAll(ctx).Err()
 }
 
-func (c *redisCache) LPush(ctx context.Context, key string, values ...interface{}) (int64, error) {
+func (c *redisCache) LPush(ctx context.Context, key string, values ...any) (int64, error) {
 	realKey := getKeyWithPrefix(c.prefix, key)
 	c.logger.Debugf("lpush on redis cache, fullKey: [%s]", realKey)
 	return c.client.LPush(ctx, realKey, values...).Result()
 }
 
-func (c *redisCache) RPush(ctx context.Context, key string, values ...interface{}) (int64, error) {
+func (c *redisCache) RPush(ctx context.Context, key string, values ...any) (int64, error) {
 	realKey := getKeyWithPrefix(c.prefix, key)
 	c.logger.Debugf("rpush on redis cache, fullKey: [%s]", realKey)
 	return c.client.RPush(ctx, realKey, values...).Result()
@@ -131,13 +131,13 @@ func (c *redisCache) SMembers(ctx context.Context, key string) ([]string, error)
 	return c.client.SMembers(ctx, realKey).Result()
 }
 
-func (c *redisCache) SAdd(ctx context.Context, key string, members ...interface{}) (int64, error) {
+func (c *redisCache) SAdd(ctx context.Context, key string, members ...any) (int64, error) {
 	realKey := getKeyWithPrefix(c.prefix, key)
 	c.logger.Debugf("sadd on redis cache, fullKey: [%s]", realKey)
 	return c.client.SAdd(ctx, realKey, members...).Result()
 }
 
-func (c *redisCache) HSet(ctx context.Context, key string, values ...interface{}) (int64, error) {
+func (c *redisCache) HSet(ctx context.Context, key string, values ...any) (int64, error) {
 	realKey := getKeyWithPrefix(c.prefix, key)
 	c.logger.Debugf("hset on redis cache, fullKey: [%s]", realKey)
 	return c.client.HSet(ctx, realKey, values...).Result()

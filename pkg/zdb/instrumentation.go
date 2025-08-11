@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/uptrace/opentelemetry-go-extra/otelgorm"
 	"github.com/Potterli20/golem/pkg/logger"
 	"github.com/Potterli20/golem/pkg/zdb/zdbconfig"
+	"github.com/uptrace/opentelemetry-go-extra/otelgorm"
 	"go.opentelemetry.io/otel/attribute"
 	"gorm.io/gorm"
 )

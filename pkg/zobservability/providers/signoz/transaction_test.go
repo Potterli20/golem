@@ -113,7 +113,7 @@ func TestSignozTransaction_SetData_WhenCalledWithDifferentTypes_ShouldSetSpanAtt
 	testCases := []struct {
 		name  string
 		key   string
-		value interface{}
+		value any
 	}{
 		{
 			name:  "string_value",

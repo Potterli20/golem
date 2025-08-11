@@ -29,7 +29,7 @@ type MockSpanOption_ApplySpan_Call struct {
 
 // ApplySpan is a helper method to define mock.On call
 //   - _a0 Span
-func (_e *MockSpanOption_Expecter) ApplySpan(_a0 interface{}) *MockSpanOption_ApplySpan_Call {
+func (_e *MockSpanOption_Expecter) ApplySpan(_a0 any) *MockSpanOption_ApplySpan_Call {
 	return &MockSpanOption_ApplySpan_Call{Call: _e.mock.On("ApplySpan", _a0)}
 }
 

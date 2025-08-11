@@ -23,11 +23,11 @@ func (_m *MockObserver) EXPECT() *MockObserver_Expecter {
 
 // CaptureException provides a mock function with given fields: ctx, err, opts
 func (_m *MockObserver) CaptureException(ctx context.Context, err error, opts ...EventOption) {
-	_va := make([]interface{}, len(opts))
+	_va := make([]any, len(opts))
 	for _i := range opts {
 		_va[_i] = opts[_i]
 	}
-	var _ca []interface{}
+	var _ca []any
 	_ca = append(_ca, ctx, err)
 	_ca = append(_ca, _va...)
 	_m.Called(_ca...)
@@ -42,9 +42,9 @@ type MockObserver_CaptureException_Call struct {
 //   - ctx context.Context
 //   - err error
 //   - opts ...EventOption
-func (_e *MockObserver_Expecter) CaptureException(ctx interface{}, err interface{}, opts ...interface{}) *MockObserver_CaptureException_Call {
+func (_e *MockObserver_Expecter) CaptureException(ctx any, err any, opts ...any) *MockObserver_CaptureException_Call {
 	return &MockObserver_CaptureException_Call{Call: _e.mock.On("CaptureException",
-		append([]interface{}{ctx, err}, opts...)...)}
+		append([]any{ctx, err}, opts...)...)}
 }
 
 func (_c *MockObserver_CaptureException_Call) Run(run func(ctx context.Context, err error, opts ...EventOption)) *MockObserver_CaptureException_Call {
@@ -72,11 +72,11 @@ func (_c *MockObserver_CaptureException_Call) RunAndReturn(run func(context.Cont
 
 // CaptureMessage provides a mock function with given fields: ctx, message, level, opts
 func (_m *MockObserver) CaptureMessage(ctx context.Context, message string, level Level, opts ...EventOption) {
-	_va := make([]interface{}, len(opts))
+	_va := make([]any, len(opts))
 	for _i := range opts {
 		_va[_i] = opts[_i]
 	}
-	var _ca []interface{}
+	var _ca []any
 	_ca = append(_ca, ctx, message, level)
 	_ca = append(_ca, _va...)
 	_m.Called(_ca...)
@@ -92,9 +92,9 @@ type MockObserver_CaptureMessage_Call struct {
 //   - message string
 //   - level Level
 //   - opts ...EventOption
-func (_e *MockObserver_Expecter) CaptureMessage(ctx interface{}, message interface{}, level interface{}, opts ...interface{}) *MockObserver_CaptureMessage_Call {
+func (_e *MockObserver_Expecter) CaptureMessage(ctx any, message any, level any, opts ...any) *MockObserver_CaptureMessage_Call {
 	return &MockObserver_CaptureMessage_Call{Call: _e.mock.On("CaptureMessage",
-		append([]interface{}{ctx, message, level}, opts...)...)}
+		append([]any{ctx, message, level}, opts...)...)}
 }
 
 func (_c *MockObserver_CaptureMessage_Call) Run(run func(ctx context.Context, message string, level Level, opts ...EventOption)) *MockObserver_CaptureMessage_Call {
@@ -259,11 +259,11 @@ func (_c *MockObserver_GetMetrics_Call) RunAndReturn(run func() MetricsProvider)
 
 // StartSpan provides a mock function with given fields: ctx, operation, opts
 func (_m *MockObserver) StartSpan(ctx context.Context, operation string, opts ...SpanOption) (context.Context, Span) {
-	_va := make([]interface{}, len(opts))
+	_va := make([]any, len(opts))
 	for _i := range opts {
 		_va[_i] = opts[_i]
 	}
-	var _ca []interface{}
+	var _ca []any
 	_ca = append(_ca, ctx, operation)
 	_ca = append(_ca, _va...)
 	ret := _m.Called(_ca...)
@@ -305,9 +305,9 @@ type MockObserver_StartSpan_Call struct {
 //   - ctx context.Context
 //   - operation string
 //   - opts ...SpanOption
-func (_e *MockObserver_Expecter) StartSpan(ctx interface{}, operation interface{}, opts ...interface{}) *MockObserver_StartSpan_Call {
+func (_e *MockObserver_Expecter) StartSpan(ctx any, operation any, opts ...any) *MockObserver_StartSpan_Call {
 	return &MockObserver_StartSpan_Call{Call: _e.mock.On("StartSpan",
-		append([]interface{}{ctx, operation}, opts...)...)}
+		append([]any{ctx, operation}, opts...)...)}
 }
 
 func (_c *MockObserver_StartSpan_Call) Run(run func(ctx context.Context, operation string, opts ...SpanOption)) *MockObserver_StartSpan_Call {
@@ -335,11 +335,11 @@ func (_c *MockObserver_StartSpan_Call) RunAndReturn(run func(context.Context, st
 
 // StartTransaction provides a mock function with given fields: ctx, name, opts
 func (_m *MockObserver) StartTransaction(ctx context.Context, name string, opts ...TransactionOption) Transaction {
-	_va := make([]interface{}, len(opts))
+	_va := make([]any, len(opts))
 	for _i := range opts {
 		_va[_i] = opts[_i]
 	}
-	var _ca []interface{}
+	var _ca []any
 	_ca = append(_ca, ctx, name)
 	_ca = append(_ca, _va...)
 	ret := _m.Called(_ca...)
@@ -369,9 +369,9 @@ type MockObserver_StartTransaction_Call struct {
 //   - ctx context.Context
 //   - name string
 //   - opts ...TransactionOption
-func (_e *MockObserver_Expecter) StartTransaction(ctx interface{}, name interface{}, opts ...interface{}) *MockObserver_StartTransaction_Call {
+func (_e *MockObserver_Expecter) StartTransaction(ctx any, name any, opts ...any) *MockObserver_StartTransaction_Call {
 	return &MockObserver_StartTransaction_Call{Call: _e.mock.On("StartTransaction",
-		append([]interface{}{ctx, name}, opts...)...)}
+		append([]any{ctx, name}, opts...)...)}
 }
 
 func (_c *MockObserver_StartTransaction_Call) Run(run func(ctx context.Context, name string, opts ...TransactionOption)) *MockObserver_StartTransaction_Call {

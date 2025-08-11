@@ -117,7 +117,7 @@ func TestSentryTransaction_SetData_WhenCalledWithDifferentTypes_ShouldSetTransac
 	testCases := []struct {
 		name  string
 		key   string
-		value interface{}
+		value any
 	}{
 		{
 			name:  "string_value",

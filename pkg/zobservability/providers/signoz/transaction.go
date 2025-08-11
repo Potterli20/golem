@@ -30,7 +30,7 @@ func (t *signozTransaction) SetTag(key, value string) {
 	t.span.SetAttributes(attribute.String(key, value))
 }
 
-func (t *signozTransaction) SetData(key string, value interface{}) {
+func (t *signozTransaction) SetData(key string, value any) {
 	setSpanAttribute(t.span, key, value)
 }
 

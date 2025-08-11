@@ -3,8 +3,8 @@ package otel
 import (
 	"testing"
 
-	"github.com/stretchr/testify/assert"
 	"github.com/Potterli20/golem/pkg/logger"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestProvider_validateConfig(t *testing.T) {

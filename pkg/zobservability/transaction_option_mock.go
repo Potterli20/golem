@@ -29,7 +29,7 @@ type MockTransactionOption_ApplyTransaction_Call struct {
 
 // ApplyTransaction is a helper method to define mock.On call
 //   - _a0 Transaction
-func (_e *MockTransactionOption_Expecter) ApplyTransaction(_a0 interface{}) *MockTransactionOption_ApplyTransaction_Call {
+func (_e *MockTransactionOption_Expecter) ApplyTransaction(_a0 any) *MockTransactionOption_ApplyTransaction_Call {
 	return &MockTransactionOption_ApplyTransaction_Call{Call: _e.mock.On("ApplyTransaction", _a0)}
 }
 

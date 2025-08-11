@@ -44,7 +44,7 @@ func TestWithSpanTag_WhenAppliedWithEmptyValue_ShouldNotPanic(t *testing.T) {
 func TestWithSpanData_WhenAppliedToSpan_ShouldNotPanic(t *testing.T) {
 	// Arrange
 	span := &noopSpan{}
-	data := map[string]interface{}{"test": "data"}
+	data := map[string]any{"test": "data"}
 	option := WithSpanData("key", data)
 
 	// Act & Assert - should not panic
@@ -67,12 +67,12 @@ func TestWithSpanData_WhenAppliedWithNilData_ShouldNotPanic(t *testing.T) {
 func TestWithSpanData_WhenAppliedWithComplexData_ShouldNotPanic(t *testing.T) {
 	// Arrange
 	span := &noopSpan{}
-	complexData := map[string]interface{}{
+	complexData := map[string]any{
 		"string":  "value",
 		"number":  42,
 		"boolean": true,
 		"array":   []string{"a", "b", "c"},
-		"nested": map[string]interface{}{
+		"nested": map[string]any{
 			"inner": "value",
 		},
 	}
@@ -139,7 +139,7 @@ func TestSpanOptions_WhenMultipleOptionsApplied_ShouldNotPanic(t *testing.T) {
 	// Arrange
 	span := &noopSpan{}
 	err := errors.New("test error")
-	data := map[string]interface{}{"key": "value"}
+	data := map[string]any{"key": "value"}
 
 	options := []SpanOption{
 		WithSpanTag("tag1", "value1"),
@@ -160,7 +160,7 @@ func TestSpanOptions_WhenAppliedToNoopSpan_ShouldNotPanic(t *testing.T) {
 	// Arrange
 	span := &noopSpan{}
 	err := errors.New("test error")
-	data := map[string]interface{}{"key": "value"}
+	data := map[string]any{"key": "value"}
 
 	options := []SpanOption{
 		WithSpanTag("tag1", "value1"),
@@ -207,7 +207,7 @@ func TestWithSpanData_WhenUsedWithDifferentDataTypes_ShouldNotPanic(t *testing.T
 	testCases := []struct {
 		name string
 		key  string
-		data interface{}
+		data any
 	}{
 		{"string_data", "string_key", "string_value"},
 		{"int_data", "int_key", 42},

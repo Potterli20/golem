@@ -70,28 +70,28 @@ func TestValidationErrors_AddErrorf(t *testing.T) {
 		name   string
 		field  string
 		format string
-		args   []interface{}
+		args   []any
 		want   string
 	}{
 		{
 			name:   "formatted error with single argument",
 			field:  "age",
 			format: "must be at least %d years old",
-			args:   []interface{}{18},
+			args:   []any{18},
 			want:   "must be at least 18 years old",
 		},
 		{
 			name:   "formatted error with multiple arguments",
 			field:  "score",
 			format: "must be between %d and %d",
-			args:   []interface{}{0, 100},
+			args:   []any{0, 100},
 			want:   "must be between 0 and 100",
 		},
 		{
 			name:   "formatted error with string argument",
 			field:  "status",
 			format: "invalid status '%s', expected 'active' or 'inactive'",
-			args:   []interface{}{"pending"},
+			args:   []any{"pending"},
 			want:   "invalid status 'pending', expected 'active' or 'inactive'",
 		},
 	}

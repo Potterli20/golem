@@ -16,7 +16,7 @@ type TokenDetails struct {
 	EXP int64  `json:"exp"`
 }
 
-func DecodeJWT(token string) (map[string]interface{}, error) {
+func DecodeJWT(token string) (map[string]any, error) {
 	segments := strings.Split(token, ".")
 	if len(segments) != 3 {
 		return nil, fmt.Errorf("token contains an invalid number of segments")
@@ -27,7 +27,7 @@ func DecodeJWT(token string) (map[string]interface{}, error) {
 		return nil, err
 	}
 
-	var payload map[string]interface{}
+	var payload map[string]any
 	err = json.Unmarshal(payloadSeg, &payload)
 	if err != nil {
 		return nil, err

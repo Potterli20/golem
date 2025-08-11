@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/Potterli20/golem/pkg/logger"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"github.com/Potterli20/golem/pkg/logger"
 )
 
 type AppSettings struct {

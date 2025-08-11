@@ -50,7 +50,7 @@ func TestWithTransactionTag_WhenAppliedWithEmptyValue_ShouldNotPanic(t *testing.
 func TestWithTransactionData_WhenAppliedToTransaction_ShouldNotPanic(t *testing.T) {
 	// Arrange
 	transaction := &noopTransaction{}
-	data := map[string]interface{}{"test": "data"}
+	data := map[string]any{"test": "data"}
 	option := WithTransactionData("key", data)
 
 	// Act & Assert - should not panic
@@ -73,12 +73,12 @@ func TestWithTransactionData_WhenAppliedWithNilData_ShouldNotPanic(t *testing.T)
 func TestWithTransactionData_WhenAppliedWithComplexData_ShouldNotPanic(t *testing.T) {
 	// Arrange
 	transaction := &noopTransaction{}
-	complexData := map[string]interface{}{
+	complexData := map[string]any{
 		"string":  "value",
 		"number":  42,
 		"boolean": true,
 		"array":   []string{"a", "b", "c"},
-		"nested": map[string]interface{}{
+		"nested": map[string]any{
 			"inner": "value",
 		},
 	}
@@ -121,7 +121,7 @@ func TestTransactionOptionFunc_WhenAppliedToTransaction_ShouldExecuteFunction(t 
 func TestTransactionOptions_WhenMultipleOptionsApplied_ShouldNotPanic(t *testing.T) {
 	// Arrange
 	transaction := &noopTransaction{}
-	data := map[string]interface{}{"key": "value"}
+	data := map[string]any{"key": "value"}
 
 	options := []TransactionOption{
 		WithTransactionTag("tag1", "value1"),
@@ -168,7 +168,7 @@ func TestWithTransactionData_WhenUsedWithDifferentDataTypes_ShouldNotPanic(t *te
 	testCases := []struct {
 		name string
 		key  string
-		data interface{}
+		data any
 	}{
 		{"string_data", "string_key", "string_value"},
 		{"int_data", "int_key", 42},

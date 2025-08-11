@@ -3,8 +3,8 @@ package factory
 import (
 	"testing"
 
-	"github.com/stretchr/testify/assert"
 	"github.com/Potterli20/golem/pkg/zobservability"
+	"github.com/stretchr/testify/assert"
 )
 
 const (

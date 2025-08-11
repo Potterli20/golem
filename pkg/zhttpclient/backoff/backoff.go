@@ -3,8 +3,8 @@ package backoff
 import (
 	"time"
 
-	"github.com/cenkalti/backoff/v4"
 	"github.com/Potterli20/golem/pkg/zconverters"
+	"github.com/cenkalti/backoff/v4"
 )
 
 const (

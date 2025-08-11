@@ -195,7 +195,7 @@ func TestSignozEvent_SetData_WhenCalledWithDifferentTypes_ShouldSetSpanAttribute
 	testCases := []struct {
 		name  string
 		key   string
-		value interface{}
+		value any
 	}{
 		{
 			name:  "string_value",

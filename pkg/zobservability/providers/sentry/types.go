@@ -3,8 +3,8 @@ package sentry
 import (
 	"context"
 
-	"github.com/getsentry/sentry-go"
 	"github.com/Potterli20/golem/pkg/zobservability"
+	"github.com/getsentry/sentry-go"
 	"go.opentelemetry.io/otel/trace"
 )
 
@@ -26,7 +26,7 @@ func (t *sentryTransaction) SetTag(key, value string) {
 	t.tx.SetTag(key, value)
 }
 
-func (t *sentryTransaction) SetData(key string, value interface{}) {
+func (t *sentryTransaction) SetData(key string, value any) {
 	t.tx.SetData(key, value)
 }
 
@@ -69,7 +69,7 @@ func (s *sentrySpan) SetTag(key, value string) {
 	s.span.SetTag(key, value)
 }
 
-func (s *sentrySpan) SetData(key string, value interface{}) {
+func (s *sentrySpan) SetData(key string, value any) {
 	s.span.SetData(key, value)
 }
 

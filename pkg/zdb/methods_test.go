@@ -77,29 +77,29 @@ func (suite *ZDatabaseSuite) TestRaw() {
 }
 
 func (suite *ZDatabaseSuite) TestExec() {
-	suite.db.(*MockZDatabase).On("Exec", "UPDATE test SET name = ?", []interface{}{"Messi"}).Return(suite.db)
+	suite.db.(*MockZDatabase).On("Exec", "UPDATE test SET name = ?", []any{"Messi"}).Return(suite.db)
 	newDb := suite.db.Exec("UPDATE test SET name = ?", "Messi")
 	suite.NotNil(newDb)
 	suite.db.(*MockZDatabase).AssertExpectations(suite.T())
 }
 
 func (suite *ZDatabaseSuite) TestSelect() {
-	suite.db.(*MockZDatabase).On("Select", "name", []interface{}{"Messi"}).Return(suite.db)
-	newDb := suite.db.Select("name", []interface{}{"Messi"})
+	suite.db.(*MockZDatabase).On("Select", "name", []any{"Messi"}).Return(suite.db)
+	newDb := suite.db.Select("name", []any{"Messi"})
 	suite.NotNil(newDb)
 	suite.db.(*MockZDatabase).AssertExpectations(suite.T())
 }
 
 func (suite *ZDatabaseSuite) TestWhere() {
-	suite.db.(*MockZDatabase).On("Where", "name = ?", []interface{}{"Messi"}).Return(suite.db)
-	newDb := suite.db.Where("name = ?", []interface{}{"Messi"})
+	suite.db.(*MockZDatabase).On("Where", "name = ?", []any{"Messi"}).Return(suite.db)
+	newDb := suite.db.Where("name = ?", []any{"Messi"})
 	suite.NotNil(newDb)
 	suite.db.(*MockZDatabase).AssertExpectations(suite.T())
 }
 
 func (suite *ZDatabaseSuite) TestJoins() {
 	query := "JOIN table2 ON table1.id = table2.fk_id"
-	args := []interface{}{"arg1", "arg2"}
+	args := []any{"arg1", "arg2"}
 	suite.db.(*MockZDatabase).On("Joins", query, args[0], args[1]).Return(suite.db)
 
 	newDb := suite.db.Joins(query, args...)

@@ -14,16 +14,16 @@ type ZRequest interface {
 	SetBody(body io.Reader) ZRequest
 	SetQueryParams(params url.Values) ZRequest
 	SetRetryPolicy(retryPolicy *RetryPolicy) ZRequest
-	SetResult(result interface{}) ZRequest
-	SetError(err interface{}) ZRequest
+	SetResult(result any) ZRequest
+	SetError(err any) ZRequest
 	Post(ctx context.Context) (*Response, error)
 	Get(ctx context.Context) (*Response, error)
 }
 
 type Response struct {
 	Code   int
-	Result interface{}
-	Error  interface{}
+	Result any
+	Error  any
 	Body   []byte
 }
 
@@ -68,12 +68,12 @@ func (r *zRequest) SetBody(body io.Reader) ZRequest {
 	return r
 }
 
-func (r *zRequest) SetResult(result interface{}) ZRequest {
+func (r *zRequest) SetResult(result any) ZRequest {
 	r.request.SetResult(result)
 	return r
 }
 
-func (r *zRequest) SetError(err interface{}) ZRequest {
+func (r *zRequest) SetError(err any) ZRequest {
 	r.request.SetError(err)
 	return r
 }

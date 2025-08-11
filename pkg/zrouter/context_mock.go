@@ -15,7 +15,7 @@ func (m *MockContext) Request() *http.Request {
 	return args.Get(0).(*http.Request)
 }
 
-func (m *MockContext) BindJSON(obj interface{}) error {
+func (m *MockContext) BindJSON(obj any) error {
 	args := m.Called(obj)
 	return args.Error(0)
 }

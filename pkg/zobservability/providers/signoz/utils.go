@@ -8,7 +8,7 @@ import (
 )
 
 // setSpanAttribute is a helper function to set span attributes with proper type handling
-func setSpanAttribute(span trace.Span, key string, value interface{}) {
+func setSpanAttribute(span trace.Span, key string, value any) {
 	switch v := value.(type) {
 	case string:
 		span.SetAttributes(attribute.String(key, v))

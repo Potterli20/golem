@@ -579,7 +579,7 @@ func (t *noopTransaction) SetName(name string) {}
 
 func (t *noopTransaction) SetTag(key, value string) {}
 
-func (t *noopTransaction) SetData(key string, value interface{}) {}
+func (t *noopTransaction) SetData(key string, value any) {}
 
 func (t *noopTransaction) StartChild(operation string, opts ...zobservability.SpanOption) zobservability.Span {
 	return &noopSpan{}
@@ -592,7 +592,7 @@ type noopSpan struct{}
 
 func (s *noopSpan) SetTag(key, value string) {}
 
-func (s *noopSpan) SetData(key string, value interface{}) {}
+func (s *noopSpan) SetData(key string, value any) {}
 
 func (s *noopSpan) SetError(err error, opts ...trace.EventOption) {}
 

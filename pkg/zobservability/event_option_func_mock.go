@@ -29,7 +29,7 @@ type MockeventOptionFunc_Execute_Call struct {
 
 // Execute is a helper method to define mock.On call
 //   - _a0 Event
-func (_e *MockeventOptionFunc_Expecter) Execute(_a0 interface{}) *MockeventOptionFunc_Execute_Call {
+func (_e *MockeventOptionFunc_Expecter) Execute(_a0 any) *MockeventOptionFunc_Execute_Call {
 	return &MockeventOptionFunc_Execute_Call{Call: _e.mock.On("Execute", _a0)}
 }
 

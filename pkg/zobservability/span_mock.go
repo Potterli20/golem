@@ -53,7 +53,7 @@ func (_c *MockSpan_Finish_Call) RunAndReturn(run func()) *MockSpan_Finish_Call {
 }
 
 // SetData provides a mock function with given fields: key, value
-func (_m *MockSpan) SetData(key string, value interface{}) {
+func (_m *MockSpan) SetData(key string, value any) {
 	_m.Called(key, value)
 }
 
@@ -65,13 +65,13 @@ type MockSpan_SetData_Call struct {
 // SetData is a helper method to define mock.On call
 //   - key string
 //   - value interface{}
-func (_e *MockSpan_Expecter) SetData(key interface{}, value interface{}) *MockSpan_SetData_Call {
+func (_e *MockSpan_Expecter) SetData(key any, value any) *MockSpan_SetData_Call {
 	return &MockSpan_SetData_Call{Call: _e.mock.On("SetData", key, value)}
 }
 
-func (_c *MockSpan_SetData_Call) Run(run func(key string, value interface{})) *MockSpan_SetData_Call {
+func (_c *MockSpan_SetData_Call) Run(run func(key string, value any)) *MockSpan_SetData_Call {
 	_c.Call.Run(func(args mock.Arguments) {
-		run(args[0].(string), args[1].(interface{}))
+		run(args[0].(string), args[1].(any))
 	})
 	return _c
 }
@@ -81,18 +81,18 @@ func (_c *MockSpan_SetData_Call) Return() *MockSpan_SetData_Call {
 	return _c
 }
 
-func (_c *MockSpan_SetData_Call) RunAndReturn(run func(string, interface{})) *MockSpan_SetData_Call {
+func (_c *MockSpan_SetData_Call) RunAndReturn(run func(string, any)) *MockSpan_SetData_Call {
 	_c.Run(run)
 	return _c
 }
 
 // SetError provides a mock function with given fields: err, opts
 func (_m *MockSpan) SetError(err error, opts ...trace.EventOption) {
-	_va := make([]interface{}, len(opts))
+	_va := make([]any, len(opts))
 	for _i := range opts {
 		_va[_i] = opts[_i]
 	}
-	var _ca []interface{}
+	var _ca []any
 	_ca = append(_ca, err)
 	_ca = append(_ca, _va...)
 	_m.Called(_ca...)
@@ -106,9 +106,9 @@ type MockSpan_SetError_Call struct {
 // SetError is a helper method to define mock.On call
 //   - err error
 //   - opts ...trace.EventOption
-func (_e *MockSpan_Expecter) SetError(err interface{}, opts ...interface{}) *MockSpan_SetError_Call {
+func (_e *MockSpan_Expecter) SetError(err any, opts ...any) *MockSpan_SetError_Call {
 	return &MockSpan_SetError_Call{Call: _e.mock.On("SetError",
-		append([]interface{}{err}, opts...)...)}
+		append([]any{err}, opts...)...)}
 }
 
 func (_c *MockSpan_SetError_Call) Run(run func(err error, opts ...trace.EventOption)) *MockSpan_SetError_Call {
@@ -147,7 +147,7 @@ type MockSpan_SetTag_Call struct {
 // SetTag is a helper method to define mock.On call
 //   - key string
 //   - value string
-func (_e *MockSpan_Expecter) SetTag(key interface{}, value interface{}) *MockSpan_SetTag_Call {
+func (_e *MockSpan_Expecter) SetTag(key any, value any) *MockSpan_SetTag_Call {
 	return &MockSpan_SetTag_Call{Call: _e.mock.On("SetTag", key, value)}
 }
 

@@ -9,7 +9,7 @@ import (
 
 type Context interface {
 	Request() *http.Request
-	BindJSON(obj interface{}) error
+	BindJSON(obj any) error
 	Header(key, value string)
 	Param(key string) string
 	Query(key string) string
@@ -26,7 +26,7 @@ func (c *chiContextAdapter) Request() *http.Request {
 	return c.req
 }
 
-func (c *chiContextAdapter) BindJSON(obj interface{}) error {
+func (c *chiContextAdapter) BindJSON(obj any) error {
 	return json.NewDecoder(c.req.Body).Decode(obj)
 }
 

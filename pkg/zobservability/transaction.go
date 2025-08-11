@@ -7,7 +7,7 @@ type Transaction interface {
 	Context() context.Context
 	SetName(name string)
 	SetTag(key, value string)
-	SetData(key string, value interface{})
+	SetData(key string, value any)
 	StartChild(operation string, opts ...SpanOption) Span
 	Finish(status TransactionStatus)
 }
@@ -43,7 +43,7 @@ func WithTransactionTag(key, value string) TransactionOption {
 }
 
 // WithTransactionData adds data to the transaction
-func WithTransactionData(key string, value interface{}) TransactionOption {
+func WithTransactionData(key string, value any) TransactionOption {
 	return transactionOptionFunc(func(t Transaction) {
 		t.SetData(key, value)
 	})
