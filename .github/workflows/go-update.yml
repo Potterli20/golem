@@ -22,9 +22,9 @@ jobs:
           go get -u
           go mod download
 
-      - name:  fix go-modules
-        run: |
-          bash ./gomod/gomod.sh
+      #- name:  fix go-modules
+      #  run: |
+      #   bash ./gomod/gomod.sh
 
       - name: Git push 
         run: |
