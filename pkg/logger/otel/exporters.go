@@ -8,7 +8,7 @@ import (
 	"go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploghttp"
 	"go.opentelemetry.io/otel/sdk/log"
 
-	"github.com/zPotterli20/golem/pkg/logger"
+	"github.com/Potterli20/golem/pkg/logger"
 )
 
 // createExporter creates the appropriate OTLP exporter based on protocol
