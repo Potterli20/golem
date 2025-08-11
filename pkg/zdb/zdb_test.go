@@ -3,8 +3,8 @@ package zdb
 import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
-	"github.com/Potteli20/golem/pkg/zdb/zdbconfig"
-	"github.com/Potteli20/golem/pkg/zdb/zdbconnector"
+	"github.com/Potterli20/golem/pkg/zdb/zdbconfig"
+	"github.com/Potterli20/golem/pkg/zdb/zdbconnector"
 	"gorm.io/gorm"
 	"testing"
 )

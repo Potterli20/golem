@@ -3,8 +3,8 @@ package zcache
 import (
 	"context"
 	"encoding/json"
-	"github.com/Potteli20/golem/pkg/logger"
-	"github.com/Potteli20/golem/pkg/metrics"
+	"github.com/Potterli20/golem/pkg/logger"
+	"github.com/Potterli20/golem/pkg/metrics"
 	"time"
 
 	"github.com/go-redis/redis/v8"

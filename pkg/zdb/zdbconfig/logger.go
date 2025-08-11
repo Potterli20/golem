@@ -1,7 +1,7 @@
 package zdbconfig
 
 import (
-	"github.com/Potteli20/golem/pkg/constants"
+	"github.com/Potterli20/golem/pkg/constants"
 	"gorm.io/gorm/logger"
 	"log"
 	"os"

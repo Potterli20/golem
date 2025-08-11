@@ -10,7 +10,7 @@ import (
 	"cloud.google.com/go/cloudsqlconn"
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/stdlib"
-	"github.com/Potteli20/golem/pkg/zdb/zdbconfig"
+	"github.com/Potterli20/golem/pkg/zdb/zdbconfig"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )

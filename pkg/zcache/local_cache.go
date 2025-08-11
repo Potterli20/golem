@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/dgraph-io/ristretto"
-	"github.com/zPotteli20/golem/pkg/logger"
-	"github.com/zPotteli20/golem/pkg/metrics"
+	"github.com/Potterli20/golem/pkg/logger"
+	"github.com/Potterli20/golem/pkg/metrics"
 )
 
 //nolint:unused,varcheck,deadcode

@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/Potteli20/golem/pkg/zdb/zdbconfig"
+	"github.com/Potterli20/golem/pkg/zdb/zdbconfig"
 )
 
 func TestCloudSQLPostgresConnector_ValidateConfig(t *testing.T) {

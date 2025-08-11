@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/go-resty/resty/v2"
-	"github.com/Potteli20/golem/pkg/zconverters"
+	"github.com/Potterli20/golem/pkg/zconverters"
 	"go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
 )
 
