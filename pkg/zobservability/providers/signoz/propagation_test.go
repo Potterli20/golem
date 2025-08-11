@@ -9,7 +9,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.opentelemetry.io/otel/propagation"
 
-	"github.com/zondax/golem/pkg/zobservability"
+	"github.com/Potterli20/golem/pkg/zobservability"
 )
 
 func TestCreatePropagator(t *testing.T) {

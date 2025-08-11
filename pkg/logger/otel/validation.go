@@ -3,7 +3,7 @@ package otel
 import (
 	"fmt"
 
-	"github.com/zondax/golem/pkg/logger"
+	"github.com/Potterli20/golem/pkg/logger"
 )
 
 // validateConfig validates the OpenTelemetry configuration

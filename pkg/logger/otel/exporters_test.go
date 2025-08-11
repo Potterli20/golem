@@ -8,7 +8,7 @@ import (
 	"go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc"
 	"go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploghttp"
 
-	"github.com/zondax/golem/pkg/logger"
+	"github.com/Potterli20/golem/pkg/logger"
 )
 
 func TestProvider_getProtocol(t *testing.T) {

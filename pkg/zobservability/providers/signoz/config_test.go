@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/zondax/golem/pkg/zobservability"
+	"github.com/Potterli20/golem/pkg/zobservability"
 )
 
 // =============================================================================

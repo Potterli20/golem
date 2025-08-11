@@ -6,8 +6,8 @@ import (
 	"strings"
 
 	"github.com/uptrace/opentelemetry-go-extra/otelgorm"
-	"github.com/zondax/golem/pkg/logger"
-	"github.com/zondax/golem/pkg/zdb/zdbconfig"
+	"github.com/Potteli20/golem/pkg/logger"
+	"github.com/Potteli20/golem/pkg/zdb/zdbconfig"
 	"go.opentelemetry.io/otel/attribute"
 	"gorm.io/gorm"
 )

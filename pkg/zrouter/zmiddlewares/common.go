@@ -6,7 +6,7 @@ import (
 	"crypto/sha256"
 	"encoding/hex"
 	"github.com/go-chi/chi/v5"
-	"github.com/zondax/golem/pkg/logger"
+	"github.com/Potterli20/golem/pkg/logger"
 	"io"
 	"net/http"
 	"regexp"

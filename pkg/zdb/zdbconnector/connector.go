@@ -1,7 +1,7 @@
 package zdbconnector
 
 import (
-	"github.com/zondax/golem/pkg/zdb/zdbconfig"
+	"github.com/Potteli20/golem/pkg/zdb/zdbconfig"
 	"gorm.io/gorm"
 )
 

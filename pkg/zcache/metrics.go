@@ -3,9 +3,9 @@ package zcache
 import (
 	"time"
 
-	"github.com/zondax/golem/pkg/logger"
-	"github.com/zondax/golem/pkg/metrics"
-	"github.com/zondax/golem/pkg/metrics/collectors"
+	"github.com/Potteli20/golem/pkg/logger"
+	"github.com/Potteli20/golem/pkg/metrics"
+	"github.com/Potteli20/golem/pkg/metrics/collectors"
 	"go.uber.org/zap"
 )
 

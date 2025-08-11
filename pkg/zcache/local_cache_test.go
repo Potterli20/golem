@@ -7,7 +7,7 @@ import (
 
 	"github.com/dgraph-io/ristretto"
 	"github.com/stretchr/testify/suite"
-	"github.com/zondax/golem/pkg/logger"
+	"github.com/Potteli20/golem/pkg/logger"
 )
 
 const (

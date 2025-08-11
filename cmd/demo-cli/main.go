@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/zondax/golem/internal/version"
-	"github.com/zondax/golem/pkg/cli"
+	"github.com/Potterli20/golem/internal/version"
+	"github.com/Potterli20/golem/pkg/cli"
 )
 
 func main() {

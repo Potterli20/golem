@@ -2,10 +2,10 @@ package zmiddlewares
 
 import (
 	"fmt"
-	"github.com/zondax/golem/pkg/logger"
-	"github.com/zondax/golem/pkg/metrics"
-	"github.com/zondax/golem/pkg/zcache"
-	"github.com/zondax/golem/pkg/zrouter/domain"
+	"github.com/Potterli20/golem/pkg/logger"
+	"github.com/Potterli20/golem/pkg/metrics"
+	"github.com/Potterli20/golem/pkg/zcache"
+	"github.com/Potterli20/golem/pkg/zrouter/domain"
 	"net/http"
 	"regexp"
 	"runtime/debug"

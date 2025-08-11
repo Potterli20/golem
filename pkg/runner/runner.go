@@ -8,7 +8,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/zondax/golem/pkg/logger"
+	"github.com/Potterli20/golem/pkg/logger"
 	"golang.org/x/sync/errgroup"
 )
 

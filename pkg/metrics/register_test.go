@@ -4,7 +4,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
-	"github.com/zondax/golem/pkg/metrics/collectors"
+	"github.com/Potterli20/golem/pkg/metrics/collectors"
 	"testing"
 )
 

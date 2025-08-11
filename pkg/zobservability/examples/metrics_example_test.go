@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/zondax/golem/pkg/zobservability"
+	"github.com/Potteli20/golem/pkg/zobservability"
 )
 
 func TestExampleBasicMetricsUsage_WhenCalled_ShouldNotPanic(t *testing.T) {

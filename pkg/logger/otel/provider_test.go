@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.opentelemetry.io/otel/sdk/log"
 
-	"github.com/zondax/golem/pkg/logger"
+	"github.com/Potterli20/golem/pkg/logger"
 )
 
 func TestProvider_createLoggerProvider(t *testing.T) {

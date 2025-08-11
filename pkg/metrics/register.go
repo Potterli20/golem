@@ -3,7 +3,7 @@ package metrics
 import (
 	"fmt"
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/zondax/golem/pkg/metrics/collectors"
+	"github.com/Potterli20/golem/pkg/metrics/collectors"
 	"regexp"
 	"strings"
 )

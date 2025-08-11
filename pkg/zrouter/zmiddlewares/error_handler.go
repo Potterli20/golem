@@ -3,8 +3,8 @@ package zmiddlewares
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/zondax/golem/pkg/logger"
-	"github.com/zondax/golem/pkg/zrouter/domain"
+	"github.com/Potterli20/golem/pkg/logger"
+	"github.com/Potterli20/golem/pkg/zrouter/domain"
 	"net/http"
 	"runtime/debug"
 )

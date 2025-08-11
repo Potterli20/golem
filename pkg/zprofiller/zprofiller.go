@@ -3,8 +3,8 @@ package zprofiller
 import (
 	"fmt"
 	"github.com/go-chi/chi/v5"
-	"github.com/zondax/golem/pkg/logger"
-	"github.com/zondax/golem/pkg/metrics"
+	"github.com/Potterli20/golem/pkg/logger"
+	"github.com/Potterli20/golem/pkg/metrics"
 	"net/http"
 	"net/http/pprof"
 	pprofRuntime "runtime/pprof"

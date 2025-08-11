@@ -4,7 +4,7 @@ import (
 	"time"
 
 	"github.com/cenkalti/backoff/v4"
-	"github.com/zondax/golem/pkg/zconverters"
+	"github.com/Potteli20/golem/pkg/zconverters"
 )
 
 const (

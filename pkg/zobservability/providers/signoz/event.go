@@ -7,7 +7,7 @@ import (
 	"go.opentelemetry.io/otel/codes"
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/zondax/golem/pkg/zobservability"
+	"github.com/Potterli20/golem/pkg/zobservability"
 )
 
 // signozEvent implements event handling for SigNoz

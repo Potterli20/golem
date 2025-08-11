@@ -3,8 +3,8 @@ package examples
 import (
 	"context"
 
-	"github.com/zondax/golem/pkg/zobservability"
-	"github.com/zondax/golem/pkg/zobservability/factory"
+	"github.com/Potterli20/golem/pkg/zobservability"
+	"github.com/Potterli20/golem/pkg/zobservability/factory"
 )
 
 // This file demonstrates how to use the observability metrics system

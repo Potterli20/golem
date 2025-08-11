@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/zondax/golem/pkg/zobservability"
+	"github.com/Potterli20/golem/pkg/zobservability"
 )
 
 // =============================================================================

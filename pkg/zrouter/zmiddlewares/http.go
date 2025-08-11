@@ -2,7 +2,7 @@ package zmiddlewares
 
 import (
 	"github.com/google/uuid"
-	"github.com/zondax/golem/pkg/logger"
+	"github.com/Potterli20/golem/pkg/logger"
 	"net/http"
 )
 

@@ -1,6 +1,6 @@
 package cli
 
-import "github.com/zondax/golem/pkg/secrets"
+import "github.com/Potterli20/golem/pkg/secrets"
 
 // LoadConfigOption is a type-safe option for LoadConfig.
 // Is on purpose not put just a function, because we want to avoid side effects.

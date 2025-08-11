@@ -5,8 +5,8 @@ import (
 
 	"github.com/dgraph-io/ristretto"
 	"github.com/go-redis/redis/v8"
-	"github.com/zondax/golem/pkg/logger"
-	"github.com/zondax/golem/pkg/metrics"
+	"github.com/Potteli20/golem/pkg/logger"
+	"github.com/Potteli20/golem/pkg/metrics"
 )
 
 const (

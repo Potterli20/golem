@@ -3,9 +3,9 @@ package zmiddlewares
 import (
 	"bytes"
 	"fmt"
-	"github.com/zondax/golem/pkg/logger"
-	"github.com/zondax/golem/pkg/metrics"
-	"github.com/zondax/golem/pkg/zrouter/domain"
+	"github.com/Potterli20/golem/pkg/logger"
+	"github.com/Potterli20/golem/pkg/metrics"
+	"github.com/Potterli20/golem/pkg/zrouter/domain"
 	"io"
 	"net/http"
 	"net/http/httptest"
@@ -15,7 +15,7 @@ import (
 	"github.com/go-chi/chi/v5"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
-	"github.com/zondax/golem/pkg/zcache"
+	"github.com/Potterli20/golem/pkg/zcache"
 )
 
 func TestCacheMiddleware(t *testing.T) {

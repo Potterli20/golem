@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/zondax/golem/pkg/zdb/zdbconfig"
+	"github.com/Potteli20/golem/pkg/zdb/zdbconfig"
 )
 
 func TestGetConfigWithDefaults(t *testing.T) {

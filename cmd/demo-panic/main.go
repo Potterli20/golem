@@ -1,10 +1,10 @@
 package main
 
 import (
-	"github.com/zondax/golem/pkg/constants"
-	"github.com/zondax/golem/pkg/logger"
-	"github.com/zondax/golem/pkg/metrics"
-	"github.com/zondax/golem/pkg/runner"
+	"github.com/Potterli20/golem/pkg/constants"
+	"github.com/Potterli20/golem/pkg/logger"
+	"github.com/Potterli20/golem/pkg/metrics"
+	"github.com/Potterli20/golem/pkg/runner"
 )
 
 func main() {

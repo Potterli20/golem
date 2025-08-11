@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/cenkalti/backoff/v4"
-	zbackoff "github.com/zondax/golem/pkg/zhttpclient/backoff"
+	zbackoff "github.com/Potteli20/golem/pkg/zhttpclient/backoff"
 )
 
 // BackoffFn is a function that returns a backoff duration.

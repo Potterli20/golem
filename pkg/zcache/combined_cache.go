@@ -2,8 +2,8 @@ package zcache
 
 import (
 	"context"
-	"github.com/zondax/golem/pkg/logger"
-	"github.com/zondax/golem/pkg/metrics"
+	"github.com/Potteli20/golem/pkg/logger"
+	"github.com/Potteli20/golem/pkg/metrics"
 	"time"
 )
 

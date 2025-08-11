@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/zondax/golem/pkg/secrets"
+	"github.com/Potterli20/golem/pkg/secrets"
 )
 
 type mockProvider struct {

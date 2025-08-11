@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/zondax/golem/pkg/logger"
-	"github.com/zondax/golem/pkg/zdb/zdbconfig"
-	"github.com/zondax/golem/pkg/zdb/zdbconnector"
+	"github.com/Potteli20/golem/pkg/logger"
+	"github.com/Potteli20/golem/pkg/zdb/zdbconfig"
+	"github.com/Potteli20/golem/pkg/zdb/zdbconnector"
 	"gorm.io/gorm/clause"
 
 	"gorm.io/gorm"

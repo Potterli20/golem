@@ -19,8 +19,8 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 
-	"github.com/zondax/golem/pkg/logger"
-	"github.com/zondax/golem/pkg/zobservability"
+	"github.com/Potterli20/golem/pkg/logger"
+	"github.com/Potterli20/golem/pkg/zobservability"
 )
 
 // contextKey is a type for context keys specific to this package

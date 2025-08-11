@@ -2,7 +2,7 @@ package zdbconnector
 
 import (
 	"fmt"
-	"github.com/zondax/golem/pkg/zdb/zdbconfig"
+	"github.com/Potteli20/golem/pkg/zdb/zdbconfig"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )

@@ -5,7 +5,7 @@ import (
 	"database/sql"
 
 	"github.com/stretchr/testify/mock"
-	"github.com/zondax/golem/pkg/zdb/zdbconfig"
+	"github.com/Potteli20/golem/pkg/zdb/zdbconfig"
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"
 )

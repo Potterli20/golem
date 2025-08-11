@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"github.com/getsentry/sentry-go"
-	"github.com/zondax/golem/pkg/zobservability"
+	"github.com/Potterli20/golem/pkg/zobservability"
 	"go.opentelemetry.io/otel/trace"
 )
 

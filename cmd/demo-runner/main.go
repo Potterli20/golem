@@ -1,6 +1,6 @@
 package main
 
-import "github.com/zondax/golem/pkg/runner"
+import "github.com/Potterli20/golem/pkg/runner"
 
 func main() {
 	println("[Demo] Running multiple tasks")

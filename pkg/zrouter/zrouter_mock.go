@@ -2,7 +2,7 @@ package zrouter
 
 import (
 	"github.com/stretchr/testify/mock"
-	"github.com/zondax/golem/pkg/zrouter/zmiddlewares"
+	"github.com/Potterli20/golem/pkg/zrouter/zmiddlewares"
 	"net/http"
 )
 
