@@ -5,7 +5,7 @@ go 1.24.5
 tool golang.org/x/tools/cmd/stringer
 
 require (
-	cloud.google.com/go/cloudsqlconn v1.17.3
+	cloud.google.com/go/cloudsqlconn v1.18.0
 	cloud.google.com/go/secretmanager v1.15.0
 	github.com/ClickHouse/clickhouse-go/v2 v2.40.1
 	github.com/alicebob/miniredis/v2 v2.35.0
@@ -127,7 +127,7 @@ require (
 	golang.org/x/sys v0.35.0 // indirect
 	golang.org/x/text v0.28.0 // indirect
 	golang.org/x/tools v0.36.0 // indirect
-	google.golang.org/api v0.246.0 // indirect
+	google.golang.org/api v0.247.0 // indirect
 	google.golang.org/genproto v0.0.0-20250811230008-5f3141c8851a // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20250811230008-5f3141c8851a // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250811230008-5f3141c8851a // indirect
