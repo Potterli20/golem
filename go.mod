@@ -127,7 +127,7 @@ require (
 	golang.org/x/sys v0.35.0 // indirect
 	golang.org/x/text v0.28.0 // indirect
 	golang.org/x/tools v0.36.0 // indirect
-	google.golang.org/api v0.247.0 // indirect
+	google.golang.org/api v0.248.0 // indirect
 	google.golang.org/genproto v0.0.0-20250818200422-3122310a409c // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20250818200422-3122310a409c // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250818200422-3122310a409c // indirect
