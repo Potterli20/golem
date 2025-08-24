@@ -24,7 +24,7 @@ require (
 	github.com/shirou/gopsutil/v4 v4.25.7
 	github.com/spf13/cobra v1.9.1
 	github.com/spf13/viper v1.20.1
-	github.com/stretchr/testify v1.10.0
+	github.com/stretchr/testify v1.11.0
 	github.com/uptrace/opentelemetry-go-extra/otelgorm v0.3.2
 	github.com/zondax/golem v0.26.1
 	go.opentelemetry.io/contrib/bridges/otelzap v0.12.0
