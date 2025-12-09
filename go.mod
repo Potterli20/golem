@@ -5,7 +5,7 @@ go 1.25.3
 tool golang.org/x/tools/cmd/stringer
 
 require (
-	cloud.google.com/go/cloudsqlconn v1.19.0
+	cloud.google.com/go/cloudsqlconn v1.19.1
 	cloud.google.com/go/secretmanager v1.16.0
 	github.com/ClickHouse/clickhouse-go/v2 v2.41.0
 	github.com/alicebob/miniredis/v2 v2.35.0
