@@ -7,7 +7,6 @@ cloud.google.com/go/auth/oauth2adapt v0.2.8 h1:keo8NaayQZ6wimpNSmW5OPc283g65QNIi
 cloud.google.com/go/auth/oauth2adapt v0.2.8/go.mod h1:XQ9y31RkqZCcwJWNSx2Xvric3RrU88hAYYbjDWYDL+c=
 cloud.google.com/go/cloudsqlconn v1.19.1 h1:byVzb4k3fmAtJmqjmqSf8qph6vUpasqapKUzhML0KEw=
 cloud.google.com/go/cloudsqlconn v1.19.1/go.mod h1:RA5UYWSohj10b746TvwVcOPoTbOVOP+wzA5sFjCsygY=
-cloud.google.com/go/compute v1.52.0 h1:SxiTrTFR/QmDbZ0cfo/8VxK/NUZSwn92+iHLDSQ51Fo=
 cloud.google.com/go/compute/metadata v0.9.0 h1:pDUj4QMoPejqq20dK0Pg2N4yG9zIkYGdBtwLoEkH9Zs=
 cloud.google.com/go/compute/metadata v0.9.0/go.mod h1:E0bWwX5wTnLPedCKqk3pJmVgCBSM6qQI1yTBdEb3C10=
 cloud.google.com/go/iam v1.5.3 h1:+vMINPiDF2ognBJ97ABAYYwRgsaqxPbQDlMnbHMjolc=
@@ -250,7 +249,6 @@ github.com/sagikazarmark/locafero v0.12.0 h1:/NQhBAkUb4+fH1jivKHWusDYFjMOOKU88ee
 github.com/sagikazarmark/locafero v0.12.0/go.mod h1:sZh36u/YSZ918v0Io+U9ogLYQJ9tLLBmM4eneO6WwsI=
 github.com/segmentio/asm v1.2.1 h1:DTNbBqs57ioxAD4PrArqftgypG4/qNpXoJx8TVXxPR0=
 github.com/segmentio/asm v1.2.1/go.mod h1:BqMnlJP91P8d+4ibuonYZw9mfnzI9HfxselHZr5aAcs=
-github.com/shirou/gopsutil v3.21.11+incompatible h1:+1+c1VGhc88SSonWP6foOcLhvnKlUeu/erjjvaPEYiI=
 github.com/shirou/gopsutil/v4 v4.25.11 h1:X53gB7muL9Gnwwo2evPSE+SfOrltMoR6V3xJAXZILTY=
 github.com/shirou/gopsutil/v4 v4.25.11/go.mod h1:EivAfP5x2EhLp2ovdpKSozecVXn1TmuG7SMzs/Wh4PU=
 github.com/shopspring/decimal v1.4.0 h1:bxl37RwXBklmTi0C79JfXCEBD1cqqHt0bbgBAGFp81k=
@@ -304,8 +302,8 @@ github.com/yuin/gopher-lua v1.1.1 h1:kYKnWBjvbNP4XLT3+bPEwAXJx262OhaHDWDVOPjL46M
 github.com/yuin/gopher-lua v1.1.1/go.mod h1:GBR0iDaNXjAgGg9zfCvksxSRnQx76gclCIb7kdAd1Pw=
 github.com/yusufpapurcu/wmi v1.2.4 h1:zFUKzehAFReQwLys1b/iSMl+JQGSCSjtVqQn9bBrPo0=
 github.com/yusufpapurcu/wmi v1.2.4/go.mod h1:SBZ9tNy3G9/m5Oi98Zks0QjeHVDvuK0qfxQmPyzfmi0=
-github.com/zondax/golem v0.28.0 h1:0OByPaZyiv6il6bFmkVeLA7tccovg+wZT9kvZXzIbiI=
-github.com/zondax/golem v0.28.0/go.mod h1:/Iku0p+mKx3XGOahtJhYsO+N9EBPY4XLBP5hbI2UogQ=
+github.com/zondax/golem v0.29.0 h1:exAKRxX7ap5b9FuBLSFtPtdMkPBUqWV6h1DLN1m/pFg=
+github.com/zondax/golem v0.29.0/go.mod h1:MU2oVfrHeSg5d8oFvfuTKVddHebEXwgE/W24uPiRpWI=
 go.mongodb.org/mongo-driver v1.11.4/go.mod h1:PTSz5yu21bkT/wXpkS7WR5f0ddqw5quethTUn9WM+2g=
 go.opencensus.io v0.24.0 h1:y73uSU6J157QMP2kn2r30vwW1A2W2WFwSCGnAVxeaD0=
 go.opencensus.io v0.24.0/go.mod h1:vNK8G9p7aAivkbmorf4v+7Hgx+Zs0yY+0fOtgBfjQKo=
