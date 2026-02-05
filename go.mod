@@ -12,7 +12,7 @@ require (
 	github.com/cenkalti/backoff/v4 v4.3.0
 	github.com/dgraph-io/ristretto v0.2.0
 	github.com/getsentry/sentry-go v0.42.0
-	github.com/go-chi/chi/v5 v5.2.4
+	github.com/go-chi/chi/v5 v5.2.5
 	github.com/go-chi/cors v1.2.2
 	github.com/go-redis/redis/v8 v8.11.5
 	github.com/go-redsync/redsync/v4 v4.15.0
