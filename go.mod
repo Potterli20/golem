@@ -5,7 +5,7 @@ go 1.25.3
 tool golang.org/x/tools/cmd/stringer
 
 require (
-	cloud.google.com/go/cloudsqlconn v1.20.0
+	cloud.google.com/go/cloudsqlconn v1.20.1
 	cloud.google.com/go/secretmanager v1.16.0
 	github.com/ClickHouse/clickhouse-go/v2 v2.43.0
 	github.com/alicebob/miniredis/v2 v2.36.1
@@ -77,7 +77,7 @@ require (
 	github.com/google/s2a-go v0.1.9 // indirect
 	github.com/googleapis/enterprise-certificate-proxy v0.3.12 // indirect
 	github.com/googleapis/gax-go/v2 v2.17.0 // indirect
-	github.com/grpc-ecosystem/grpc-gateway/v2 v2.27.8 // indirect
+	github.com/grpc-ecosystem/grpc-gateway/v2 v2.28.0 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
 	github.com/hashicorp/go-version v1.8.0 // indirect
@@ -128,7 +128,7 @@ require (
 	golang.org/x/sys v0.41.0 // indirect
 	golang.org/x/text v0.34.0 // indirect
 	golang.org/x/tools v0.41.0 // indirect
-	google.golang.org/api v0.266.0 // indirect
+	google.golang.org/api v0.267.0 // indirect
 	google.golang.org/genproto v0.0.0-20260209200024-4cfbd4190f57 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20260209200024-4cfbd4190f57 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20260209200024-4cfbd4190f57 // indirect
