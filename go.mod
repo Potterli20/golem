@@ -8,7 +8,7 @@ require (
 	cloud.google.com/go/cloudsqlconn v1.20.1
 	cloud.google.com/go/secretmanager v1.16.0
 	github.com/ClickHouse/clickhouse-go/v2 v2.43.0
-	github.com/alicebob/miniredis/v2 v2.36.1
+	github.com/alicebob/miniredis/v2 v2.37.0
 	github.com/cenkalti/backoff/v4 v4.3.0
 	github.com/dgraph-io/ristretto v0.2.0
 	github.com/getsentry/sentry-go v0.43.0
