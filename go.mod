@@ -1,11 +1,11 @@
 module github.com/Potterli20/golem
 
-go 1.25.3
+go 1.25.7
 
 tool golang.org/x/tools/cmd/stringer
 
 require (
-	cloud.google.com/go/cloudsqlconn v1.20.1
+	cloud.google.com/go/cloudsqlconn v1.20.2
 	cloud.google.com/go/secretmanager v1.16.0
 	github.com/ClickHouse/clickhouse-go/v2 v2.43.0
 	github.com/alicebob/miniredis/v2 v2.37.0
