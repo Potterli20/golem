@@ -1,11 +1,11 @@
 module github.com/Potterli20/golem
 
-go 1.25.7
+go 1.25.8
 
 tool golang.org/x/tools/cmd/stringer
 
 require (
-	cloud.google.com/go/cloudsqlconn v1.21.0
+	cloud.google.com/go/cloudsqlconn v1.21.1
 	cloud.google.com/go/secretmanager v1.20.0
 	github.com/ClickHouse/clickhouse-go/v2 v2.46.0
 	github.com/alicebob/miniredis/v2 v2.37.0
@@ -75,7 +75,7 @@ require (
 	github.com/go-viper/mapstructure/v2 v2.5.0 // indirect
 	github.com/golang/groupcache v0.0.0-20241129210726-2c02b8208cf8 // indirect
 	github.com/google/s2a-go v0.1.9 // indirect
-	github.com/googleapis/enterprise-certificate-proxy v0.3.15 // indirect
+	github.com/googleapis/enterprise-certificate-proxy v0.3.16 // indirect
 	github.com/googleapis/gax-go/v2 v2.22.0 // indirect
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.29.0 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
