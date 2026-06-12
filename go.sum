@@ -5,8 +5,6 @@ cloud.google.com/go/auth v0.20.0 h1:kXTssoVb4azsVDoUiF8KvxAqrsQcQtB53DcSgta74CA=
 cloud.google.com/go/auth v0.20.0/go.mod h1:942/yi/itH1SsmpyrbnTMDgGfdy2BUqIKyd0cyYLc5Q=
 cloud.google.com/go/auth/oauth2adapt v0.2.8 h1:keo8NaayQZ6wimpNSmW5OPc283g65QNIiLpZnkHRbnc=
 cloud.google.com/go/auth/oauth2adapt v0.2.8/go.mod h1:XQ9y31RkqZCcwJWNSx2Xvric3RrU88hAYYbjDWYDL+c=
-cloud.google.com/go/cloudsqlconn v1.21.2 h1:Iw/3W+6eIB9AChWFF2wlqLwpgaZ+DOX2DBUKKfsSDMI=
-cloud.google.com/go/cloudsqlconn v1.21.2/go.mod h1:AXcbXAjdud2Hl6JLe80VHCaOjAsvh8O/JgQnhrRvJl8=
 cloud.google.com/go/cloudsqlconn v1.22.0 h1:4+uh5gGbjmFzitCD9owKZhwjBN2U+4sWxD9gJjcpOeE=
 cloud.google.com/go/cloudsqlconn v1.22.0/go.mod h1:AXcbXAjdud2Hl6JLe80VHCaOjAsvh8O/JgQnhrRvJl8=
 cloud.google.com/go/compute v1.64.0 h1:7MmuzeAxlG5MOG5PQD2NLtyYR6bWjkvGljRu7pByoRU=
@@ -64,8 +62,6 @@ github.com/envoyproxy/go-control-plane/envoy v1.37.0/go.mod h1:DReE9MMrmecPy+YvQ
 github.com/envoyproxy/protoc-gen-validate v0.1.0/go.mod h1:iSmxcyjqTsJpI2R4NaDN7+kN2VEUnK/pcBlmesArF7c=
 github.com/envoyproxy/protoc-gen-validate v1.3.3 h1:MVQghNeW+LZcmXe7SY1V36Z+WFMDjpqGAGacLe2T0ds=
 github.com/envoyproxy/protoc-gen-validate v1.3.3/go.mod h1:TsndJ/ngyIdQRhMcVVGDDHINPLWB7C82oDArY51KfB0=
-github.com/felixge/httpsnoop v1.0.4 h1:NFTV2Zj1bL4mc9sqWACXbQFVBBg2W3GPvqp8/ESS2Wg=
-github.com/felixge/httpsnoop v1.0.4/go.mod h1:m8KPJKqk1gH5J9DgRY2ASl2lWCfGKXixSwevea8zH2U=
 github.com/felixge/httpsnoop v1.1.0 h1:3YtUj32ZZkqZtt3sZZsClsymw/QDuVfpNhoA31zeORc=
 github.com/felixge/httpsnoop v1.1.0/go.mod h1:Zqxgdd+1Rkcz8euOqdr7lqgCRJztwr5hp9vDSi5UZCE=
 github.com/frankban/quicktest v1.14.6 h1:7Xjx+VpznH+oBnejlPUj8oUpdxnVs4f8XU8WnHkI4W8=
