@@ -75,7 +75,7 @@ require (
 	github.com/go-viper/mapstructure/v2 v2.5.0 // indirect
 	github.com/golang/groupcache v0.0.0-20241129210726-2c02b8208cf8 // indirect
 	github.com/google/s2a-go v0.1.9 // indirect
-	github.com/googleapis/enterprise-certificate-proxy v0.3.17 // indirect
+	github.com/googleapis/enterprise-certificate-proxy v0.3.18 // indirect
 	github.com/googleapis/gax-go/v2 v2.22.0 // indirect
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.29.0 // indirect
 	github.com/hashicorp/go-version v1.9.0 // indirect
@@ -127,9 +127,9 @@ require (
 	golang.org/x/text v0.39.0 // indirect
 	golang.org/x/tools v0.47.0 // indirect
 	google.golang.org/api v0.287.0 // indirect
-	google.golang.org/genproto v0.0.0-20260706174457-84412dbb4a06 // indirect
-	google.golang.org/genproto/googleapis/api v0.0.0-20260706174457-84412dbb4a06 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20260706174457-84412dbb4a06 // indirect
+	google.golang.org/genproto v0.0.0-20260706201446-f0a921348800 // indirect
+	google.golang.org/genproto/googleapis/api v0.0.0-20260706201446-f0a921348800 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20260706201446-f0a921348800 // indirect
 	google.golang.org/protobuf v1.36.11 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
