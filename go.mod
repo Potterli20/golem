@@ -8,7 +8,7 @@ require (
 	cloud.google.com/go/cloudsqlconn v1.25.2
 	cloud.google.com/go/secretmanager v1.21.0
 	github.com/ClickHouse/clickhouse-go/v2 v2.48.0
-	github.com/alicebob/miniredis/v2 v2.38.0
+	github.com/alicebob/miniredis/v2 v2.39.0
 	github.com/cenkalti/backoff/v4 v4.3.0
 	github.com/dgraph-io/ristretto v0.2.0
 	github.com/getsentry/sentry-go v0.49.0
@@ -26,7 +26,7 @@ require (
 	github.com/spf13/viper v1.21.0
 	github.com/stretchr/testify v1.12.1
 	github.com/uptrace/opentelemetry-go-extra/otelgorm v0.3.2
-	github.com/zondax/golem v0.30.0
+	github.com/zondax/golem v0.31.1
 	go.opentelemetry.io/contrib/bridges/otelzap v0.20.1
 	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.71.0
 	go.opentelemetry.io/contrib/propagators/b3 v1.46.0
@@ -113,7 +113,7 @@ require (
 	go.opencensus.io v0.24.0 // indirect
 	go.opentelemetry.io/auto/sdk v1.2.1 // indirect
 	go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.71.0 // indirect
-	go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetrichttp v1.37.0 // indirect
+	go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetrichttp v1.46.0 // indirect
 	go.opentelemetry.io/otel/log v0.22.0 // indirect
 	go.opentelemetry.io/proto/otlp v1.11.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
