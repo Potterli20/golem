@@ -47,7 +47,7 @@ require (
 	golang.org/x/time v0.16.0
 	google.golang.org/grpc v1.83.2
 	gorm.io/driver/clickhouse v0.7.0
-	gorm.io/driver/postgres v1.6.2
+	gorm.io/driver/postgres v1.6.3
 	gorm.io/gorm v1.31.2
 )
 
@@ -125,7 +125,7 @@ require (
 	golang.org/x/sys v0.48.0 // indirect
 	golang.org/x/text v0.42.0 // indirect
 	golang.org/x/tools v0.49.0 // indirect
-	google.golang.org/api v0.297.0 // indirect
+	google.golang.org/api v0.298.0 // indirect
 	google.golang.org/genproto v0.0.0-20260911204522-f61a6ca850bd // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20260911204522-f61a6ca850bd // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20260911204522-f61a6ca850bd // indirect
