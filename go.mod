@@ -6,7 +6,7 @@ tool golang.org/x/tools/cmd/stringer
 
 require (
 	cloud.google.com/go/cloudsqlconn v1.25.2
-	cloud.google.com/go/secretmanager v1.21.0
+	cloud.google.com/go/secretmanager v1.22.0
 	github.com/ClickHouse/clickhouse-go/v2 v2.48.0
 	github.com/alicebob/miniredis/v2 v2.38.0
 	github.com/cenkalti/backoff/v4 v4.3.0
@@ -52,11 +52,11 @@ require (
 )
 
 require (
-	cloud.google.com/go/auth v0.23.3 // indirect
-	cloud.google.com/go/auth/oauth2adapt v0.2.8 // indirect
-	cloud.google.com/go/compute/metadata v0.9.1 // indirect
-	cloud.google.com/go/iam v1.13.0 // indirect
-	cloud.google.com/go/sql v0.1.0 // indirect
+	cloud.google.com/go/auth v0.24.0 // indirect
+	cloud.google.com/go/auth/oauth2adapt v0.3.0 // indirect
+	cloud.google.com/go/compute/metadata v0.10.0 // indirect
+	cloud.google.com/go/iam v1.14.0 // indirect
+	cloud.google.com/go/sql v0.2.0 // indirect
 	github.com/ClickHouse/ch-go v0.74.0 // indirect
 	github.com/andybalholm/brotli v1.2.4 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
