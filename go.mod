@@ -6,7 +6,7 @@ tool golang.org/x/tools/cmd/stringer
 
 require (
 	cloud.google.com/go/cloudsqlconn v1.25.4
-	cloud.google.com/go/secretmanager v1.23.0
+	cloud.google.com/go/secretmanager v1.23.1
 	github.com/ClickHouse/clickhouse-go/v2 v2.50.0
 	github.com/alicebob/miniredis/v2 v2.38.0
 	github.com/cenkalti/backoff/v4 v4.3.0
@@ -52,11 +52,11 @@ require (
 )
 
 require (
-	cloud.google.com/go/auth v0.24.1 // indirect
-	cloud.google.com/go/auth/oauth2adapt v0.3.0 // indirect
+	cloud.google.com/go/auth v0.24.2 // indirect
+	cloud.google.com/go/auth/oauth2adapt v0.3.1 // indirect
 	cloud.google.com/go/compute/metadata v0.10.0 // indirect
-	cloud.google.com/go/iam v1.15.0 // indirect
-	cloud.google.com/go/sql v0.4.0 // indirect
+	cloud.google.com/go/iam v1.15.1 // indirect
+	cloud.google.com/go/sql v0.4.1 // indirect
 	github.com/ClickHouse/ch-go v0.75.0 // indirect
 	github.com/andybalholm/brotli v1.2.7 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
@@ -127,7 +127,7 @@ require (
 	golang.org/x/sys v0.49.0 // indirect
 	golang.org/x/text v0.43.0 // indirect
 	golang.org/x/tools v0.52.0 // indirect
-	google.golang.org/api v0.309.0 // indirect
+	google.golang.org/api v0.310.0 // indirect
 	google.golang.org/genproto v0.0.0-20261026165753-2ffab32bce7e // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20261026165753-2ffab32bce7e // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20261026165753-2ffab32bce7e // indirect
