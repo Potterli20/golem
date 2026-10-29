@@ -5,7 +5,7 @@ go 1.26.0
 tool golang.org/x/tools/cmd/stringer
 
 require (
-	cloud.google.com/go/cloudsqlconn v1.25.4
+	cloud.google.com/go/cloudsqlconn v1.26.0
 	cloud.google.com/go/secretmanager v1.23.1
 	github.com/ClickHouse/clickhouse-go/v2 v2.50.0
 	github.com/alicebob/miniredis/v2 v2.38.0
@@ -56,8 +56,11 @@ require (
 	cloud.google.com/go/auth/oauth2adapt v0.3.1 // indirect
 	cloud.google.com/go/compute/metadata v0.10.0 // indirect
 	cloud.google.com/go/iam v1.15.1 // indirect
+	cloud.google.com/go/monitoring v1.32.1 // indirect
 	cloud.google.com/go/sql v0.5.0 // indirect
 	github.com/ClickHouse/ch-go v0.75.0 // indirect
+	github.com/GoogleCloudPlatform/opentelemetry-operations-go/exporter/metric v0.62.0 // indirect
+	github.com/GoogleCloudPlatform/opentelemetry-operations-go/internal/resourcemapping v0.62.0 // indirect
 	github.com/andybalholm/brotli v1.2.7 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cenkalti/backoff/v5 v5.0.3 // indirect
@@ -78,7 +81,6 @@ require (
 	github.com/googleapis/enterprise-certificate-proxy v0.3.24 // indirect
 	github.com/googleapis/gax-go/v2 v2.27.0 // indirect
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.33.0 // indirect
-	github.com/hashicorp/go-uuid v1.0.4 // indirect
 	github.com/hashicorp/go-version v1.9.0 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/jackc/pgpassfile v1.0.0 // indirect
