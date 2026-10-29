@@ -15,6 +15,8 @@ cloud.google.com/go/secretmanager v1.23.1 h1:i7GMED6jHSJS72VQbwyBsEw+vsHKbI18MJF
 cloud.google.com/go/secretmanager v1.23.1/go.mod h1:S2EZCRLLtM7DEzGr73o5IvpmjCBacfzl0MXXyT4x//c=
 cloud.google.com/go/sql v0.4.1 h1:1zVU4JhjOUU7MMUfExbtA85K6shaFl/ZhvL5NCANLak=
 cloud.google.com/go/sql v0.4.1/go.mod h1:EutQaK1nULpt93BwdQHsle7sFwQqI8TiZ+wPaUs7yb4=
+cloud.google.com/go/sql v0.5.0 h1:una0pIRuTvdluyiclRl0abYIa25zsmGh5vZ9csNOXR4=
+cloud.google.com/go/sql v0.5.0/go.mod h1:EutQaK1nULpt93BwdQHsle7sFwQqI8TiZ+wPaUs7yb4=
 filippo.io/edwards25519 v1.2.0 h1:crnVqOiS4jqYleHd9vaKZ+HKtHfllngJIiOpNpoJsjo=
 filippo.io/edwards25519 v1.2.0/go.mod h1:xzAOLCNug/yB62zG1bQ8uziwrIqIuxhctzJT18Q77mc=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
@@ -186,6 +188,8 @@ github.com/onsi/gomega v1.18.1 h1:M1GfJqGRrBrrGGsbxzV5dqM2U2ApXefZCQpkukxYRLE=
 github.com/onsi/gomega v1.18.1/go.mod h1:0q+aL8jAiMXy9hbwj2mr5GziHiwhAIQpFmmtT5hitRs=
 github.com/pandatix/go-abnf v0.5.1 h1:iyLvSu2Aq12iE0r4n948Qw21BHDuckLq/8WIXAAF+HI=
 github.com/pandatix/go-abnf v0.5.1/go.mod h1:VBmbtpFgQNEaQpyAvmi+Ecd9wAYJKzA3TmiB3L93sVg=
+github.com/pandatix/go-abnf v0.5.3 h1:LA9AaxAqwzdxfDe7+HIGUB6tzx2N6wYVEAChmfsoPgo=
+github.com/pandatix/go-abnf v0.5.3/go.mod h1:AE0KD3/VNoCjGzc1gqetRKshbI4SYErXQ/8kPenR5mc=
 github.com/paulmach/orb v0.13.0 h1:r7n7mQGGF+cj/CbcivEj9J3HGK+XR+yXnvzRdq9saIw=
 github.com/paulmach/orb v0.13.0/go.mod h1:6scRWINywA2Jf05dcjOfLfxrUIMECvTSG2MVbRLxu/k=
 github.com/pelletier/go-toml/v2 v2.4.3 h1:GTRvJQutkOSftxIFD5xw9aepkYNuPWmVJpffdDPYVpY=
