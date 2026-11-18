@@ -21,9 +21,8 @@ cloud.google.com/go/secretmanager v1.24.0 h1:gPz2Xjl13IAFhi7Y/J8tAVnsDuEXABSIydE
 cloud.google.com/go/secretmanager v1.24.0/go.mod h1:S2EZCRLLtM7DEzGr73o5IvpmjCBacfzl0MXXyT4x//c=
 cloud.google.com/go/sql v0.7.0 h1:r/Kvhb5kLzuPPFiDk0jCqP4mNA0dzDsYuO07fb15Wj8=
 cloud.google.com/go/sql v0.7.0/go.mod h1:EutQaK1nULpt93BwdQHsle7sFwQqI8TiZ+wPaUs7yb4=
-cloud.google.com/go/trace v1.16.0 h1:GmQovzFc5F0CNfl0VLgL64aoTtu7xsM0YajW2GlG9+E=
-cloud.google.com/go/trace v1.16.0/go.mod h1:r+bdAn16dKLSV1G2D5v3e58IlQlizfxWrUfjx7kM7X0=
 cloud.google.com/go/trace v1.17.0 h1:7+RAkTVGq3rmO2G74BdhpP1Bvbk3rFWzGt1MfMfHBt8=
+cloud.google.com/go/trace v1.17.0/go.mod h1:GTuZUt8sliPaEYVumjlXAjc4ClYld/nxWBALepV7Mx4=
 filippo.io/edwards25519 v1.2.0 h1:crnVqOiS4jqYleHd9vaKZ+HKtHfllngJIiOpNpoJsjo=
 filippo.io/edwards25519 v1.2.0/go.mod h1:xzAOLCNug/yB62zG1bQ8uziwrIqIuxhctzJT18Q77mc=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
@@ -31,15 +30,10 @@ github.com/ClickHouse/ch-go v0.76.0 h1:3kawObu3q1/1wLBvTrpEUxLnV4x3qgojagUV2uXdA
 github.com/ClickHouse/ch-go v0.76.0/go.mod h1:hGCgLFe0i67qX9oVNPBbMACdbogruy/rSrEMcaAddu8=
 github.com/ClickHouse/clickhouse-go/v2 v2.51.0 h1:aoTTC+qxKf1O2XojwC5scRtPjJ9JdRJdkLH9aEWWwWc=
 github.com/ClickHouse/clickhouse-go/v2 v2.51.0/go.mod h1:GJrhJWhGJY0SoYTmH2eaDf0KuGsYDTo0ya66osesHmk=
-github.com/GoogleCloudPlatform/opentelemetry-operations-go/exporter/metric v0.62.0 h1:5y2LR2pripbccOte6BpZ+guv5O5W0OQIfKvUYZrGaAQ=
-github.com/GoogleCloudPlatform/opentelemetry-operations-go/exporter/metric v0.62.0/go.mod h1:b3f7EifFRqkVt142USoGIP62uUeZm7ALCPrs1ZjWXYo=
 github.com/GoogleCloudPlatform/opentelemetry-operations-go/exporter/metric v0.63.0 h1:IRqLaCkFN7i+bo7eZFIITa2HP2aXZQvU0VQBEqgUrDs=
 github.com/GoogleCloudPlatform/opentelemetry-operations-go/exporter/metric v0.63.0/go.mod h1:loo9GMOLCTVFwqP+ZAZkXuPzPq3jbauUpmG565+qMNM=
-github.com/GoogleCloudPlatform/opentelemetry-operations-go/internal/cloudmock v0.62.0 h1:tRsXhJnn0w0TNwJpVrB94wsrimzjWKFzdQlUhRdNUzc=
-github.com/GoogleCloudPlatform/opentelemetry-operations-go/internal/cloudmock v0.62.0/go.mod h1:ifhe5teRNcbxg9p353DhOkOgczzL/IBLYFqT1cm1zpM=
 github.com/GoogleCloudPlatform/opentelemetry-operations-go/internal/cloudmock v0.63.0 h1:o6Qfbi7RPeW0R5uhIaHVQ2Sv0KcsYcjA9I/erzqhSpY=
-github.com/GoogleCloudPlatform/opentelemetry-operations-go/internal/resourcemapping v0.62.0 h1:aPMa5qZU9dp4fU34o+jQgVIPFIOi20oxYg8TLigmZLg=
-github.com/GoogleCloudPlatform/opentelemetry-operations-go/internal/resourcemapping v0.62.0/go.mod h1:sg6Wqbl0BKKZ5zKnQj2q0qic/3ziF894SCx1LpbX37Y=
+github.com/GoogleCloudPlatform/opentelemetry-operations-go/internal/cloudmock v0.63.0/go.mod h1:2YwTTZvg1Nhk8hvfr9RsA80ehY7dU4bJWWem7ailECQ=
 github.com/GoogleCloudPlatform/opentelemetry-operations-go/internal/resourcemapping v0.63.0 h1:BvrXkC8g/MqI7lyJt0Jddjuo1hm+NlNx4theSFfhfw8=
 github.com/GoogleCloudPlatform/opentelemetry-operations-go/internal/resourcemapping v0.63.0/go.mod h1:O5gqO+rsDs9p6eDe5MNSLfSIcoiw1iGqkyQbiiFCWhU=
 github.com/alicebob/miniredis/v2 v2.38.0 h1:nZAzCR+Lj+Vxk4ZXzm2NuKq2O33RXj1XxJ2e2uP9jiw=
@@ -366,8 +360,6 @@ golang.org/x/net v0.0.0-20190213061140-3a22650c66bd/go.mod h1:mL1N/T3taQHkDXs73r
 golang.org/x/net v0.0.0-20190311183353-d8887717615a/go.mod h1:t9HGtf8HONx5eT2rtn7q6eTqICYqUVnKs3thJo3Qplg=
 golang.org/x/net v0.0.0-20190404232315-eb5bcb51f2a3/go.mod h1:t9HGtf8HONx5eT2rtn7q6eTqICYqUVnKs3thJo3Qplg=
 golang.org/x/net v0.0.0-20201110031124-69a78807bb2b/go.mod h1:sp8m0HH+o8qH0wwXwYZr8TS3Oi6o0r6Gce1SSxlDquU=
-golang.org/x/net v0.62.0 h1:18ELalfM5+XNRwzM2nYqXsZQ9ByS1uhj2O/U7+5jqRY=
-golang.org/x/net v0.62.0/go.mod h1:WgDCOTH8iwtB66T4/GfI94AHo/hhdb7Hah9NDseQfiI=
 golang.org/x/net v0.63.0 h1:HCoTmNh9EpD1PpK8gBNFY4gcTY4N+KQEO8ylfIKqFJ0=
 golang.org/x/net v0.63.0/go.mod h1:15JLg3IX1bLjHK264EZQEbIpTiR/KVLuo9CTRWd0pig=
 golang.org/x/oauth2 v0.0.0-20180821212333-d2e6202438be/go.mod h1:N/0e6XlmueqKjAGxoOufVs8QHGRruUQn6yWY3a++T0U=
@@ -403,8 +395,6 @@ golang.org/x/tools v0.52.1-0.20261106145633-d407941a339a/go.mod h1:ItcP5UNaVGG+Y
 golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543/go.mod h1:I/5z698sn9Ka8TeJc9MKroUUfqBBauWjQqLJ2OPfmY0=
 gonum.org/v1/gonum v0.17.0 h1:VbpOemQlsSMrYmn7T2OUvQ4dqxQXU+ouZFQsZOx50z4=
 gonum.org/v1/gonum v0.17.0/go.mod h1:El3tOrEuMpv2UdMrbNlKEh9vd86bmQ6vqIcDwxEOc1E=
-google.golang.org/api v0.315.0 h1:77nwD4sln0GQQqQKb4CY+DJhRwA0AeQ4w0gkbLwRPms=
-google.golang.org/api v0.315.0/go.mod h1:kn5kd1IMbs2x4hq99GcaTOumC0fnMYMwLNAfFxzpISU=
 google.golang.org/api v0.316.0 h1:nwaBinxtopJcOPwNYkvuRo7JA2nKppWzzk1sSORUWp4=
 google.golang.org/api v0.316.0/go.mod h1:kn5kd1IMbs2x4hq99GcaTOumC0fnMYMwLNAfFxzpISU=
 google.golang.org/appengine v1.1.0/go.mod h1:EbEs0AVv82hx2wNQdGPgUI5lhzA/G0D9YwlJXL52JkM=
