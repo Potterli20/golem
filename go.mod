@@ -5,7 +5,7 @@ go 1.26.0
 tool golang.org/x/tools/cmd/stringer
 
 require (
-	cloud.google.com/go/cloudsqlconn v1.27.0
+	cloud.google.com/go/cloudsqlconn v1.27.1
 	cloud.google.com/go/secretmanager v1.24.0
 	github.com/ClickHouse/clickhouse-go/v2 v2.51.0
 	github.com/alicebob/miniredis/v2 v2.38.0
@@ -130,8 +130,8 @@ require (
 	golang.org/x/text v0.44.0 // indirect
 	golang.org/x/tools v0.52.1-0.20261106145633-d407941a339a // indirect
 	google.golang.org/api v0.316.0 // indirect
-	google.golang.org/genproto v0.0.0-20261118221215-c8830f628b3f // indirect
-	google.golang.org/genproto/googleapis/api v0.0.0-20261118221215-c8830f628b3f // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20261118221215-c8830f628b3f // indirect
+	google.golang.org/genproto v0.0.0-20261123191846-1e707ab9fbc2 // indirect
+	google.golang.org/genproto/googleapis/api v0.0.0-20261123191846-1e707ab9fbc2 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20261123191846-1e707ab9fbc2 // indirect
 	google.golang.org/protobuf v1.36.12 // indirect
 )
